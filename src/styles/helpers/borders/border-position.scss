@@ -1,0 +1,32 @@
+
+//bp array are in config border-position
+//position shows where border is (top, bottom, left, right)
+@each $position in $bp{
+  @if $position=="top"{
+    .bp-top{ 
+      border-#{$position}-style: solid; 
+   }
+  }
+  @else if $position=="bottom"{
+    .bp-bottom{ 
+      border-#{$position}-style: solid; 
+   }
+  }
+  @else if $position=="left"{
+    .bp-left{ 
+      border-#{$position}-style: solid;
+   }
+  }
+  @else {
+    .bp-right{ 
+      border-#{$position}-style: solid; 
+   }
+  }
+}
+//example css: .b-top{ border-top-style: solid; }
+
+//.b-each - top, bottom, right and left borders are solid
+.bp-each{
+  border-style: solid;
+} 
+   

@@ -1,0 +1,60 @@
+@each $name, $offset in $padding {
+    .p-#{$name}{
+        padding: $offset !important;
+    }
+    .pt-#{$name} {
+        padding-top: $offset !important;
+    }
+    .pb-#{$name} {
+        padding-bottom: $offset !important;
+    }
+    .pl-#{$name} {
+        padding-left: $offset !important;
+    }
+    .pr-#{$name} {
+        padding-right: $offset !important;
+    }
+    .px-#{$name} {
+        padding-right: $offset !important;
+        padding-left: $offset !important;
+    }
+    .py-#{$name} {
+        padding-top: $offset !important;
+        padding-bottom: $offset !important;
+    }
+}
+@each $point, $screen-size in $grid-breakpoints{
+    //grid-breakpoints:( sm: 576px, md:768px... )
+    //point = sm, screen-size = 576px
+    @if $point != xs{ //for all sizes except "xs" add prefix
+        @media screen and (min-width: $screen-size){
+            @each $name, $offset in $padding {
+                //padding: (  "1": 4px, "2": 8px... )
+                //name = 1, offset = 4px
+                .p-#{$name}-#{$point}{
+                    padding: $offset !important;
+                }
+                .pt-#{$name}-#{$point} {
+                    padding-top: $offset !important;
+                }
+                .pb-#{$name}-#{$point} {
+                    padding-bottom: $offset !important;
+                }
+                .pl-#{$name}-#{$point} {
+                    padding-left: $offset !important;
+                }
+                .pr-#{$name}-#{$point} {
+                    padding-right: $offset !important;
+                }
+                .px-#{$name}-#{$point} {
+                    padding-right: $offset !important;
+                    padding-left: $offset !important;
+                }
+                .py-#{$name}-#{$point} {
+                    padding-top: $offset !important;
+                    padding-bottom: $offset !important;
+                }
+            }
+        }
+    }
+}
