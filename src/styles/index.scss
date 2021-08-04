@@ -1,4 +1,9 @@
 // config files
-@import "./config/index.scss";
-
- @import "./helpers/index.scss";
+// config
+@import "components/index.scss";
+// helpers
+@import "helpers/index.scss";
+// components
+@import "components/index.scss";
+//pages
+@import "pages/index.scss";
