@@ -1,0 +1,13 @@
+@import url(../../config/index.scss);
+
+
+
+.link{
+    text-decoration: none;
+    &-primary{
+        color: map_get($) ;
+    }
+    &-white{
+        color: ;
+    }
+}
