@@ -11,8 +11,8 @@ $border-color: (
   gray-lighten1: var(--color-gray-lighten1),
 );
 
-@each $color in $border-color {
+@each $color, $value in $border-color {
   .border-color-#{$color} {
-    border-color: $color !important;
+    border-color: $value !important;
   }
 }

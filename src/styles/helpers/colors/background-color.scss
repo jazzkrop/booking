@@ -11,8 +11,8 @@ $background-color: (
   gray-lighten1: var(--color-gray-lighten1),
 );
 
-@each $color in $background-color {
-  .bg-color-#{$color} {
-    background-color: $color !important;
+@each $color_name, $value in $background-color {
+  .bg-color-#{$color_name} {
+    background-color: $value;
   }
 }
