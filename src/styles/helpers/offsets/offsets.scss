@@ -1,20 +1,118 @@
-@for $i from $grid-columns through 1 {
-  .offset-#{$i}{
-    margin-right: $col-width * $i;
+@import "../../config/offsets/index.scss";
+
+.p {
+  @each $size, $value in $spacers {
+    &-#{$size} {
+      padding: $value;
+    }
   }
 }
 
+.pt {
+  @each $size, $value in $spacers {
+    &-#{$size} {
+      padding-top: $value;
+    }
+  }
+}
 
-@each $point, $screen-size in $grid-breakpoints {
-  @if $point != xs{
-    @media screen and (min-width: $screen-size){
-      //$grid-columns: 12
-      //from 12 to 1(included) run cycle
-      @for $i from $grid-columns through 1 {
-        .offset-#{$i}-#{$point}{
-          margin-right: $col-width * $i;
-        }
-      }
+.pr {
+  @each $size, $value in $spacers {
+    &-#{$size} {
+      padding-right: $value;
+    }
+  }
+}
+
+.pl {
+  @each $size, $value in $spacers {
+    &-#{$size} {
+      padding-left: $value;
+    }
+  }
+}
+
+.pb {
+  @each $size, $value in $spacers {
+    &-#{$size} {
+      padding-bottom: $value;
+    }
+  }
+}
+
+.px {
+  @each $size, $value in $spacers {
+    &-#{$size} {
+      padding-left: $value;
+      padding-right: $value;
+    }
+  }
+}
+
+.py {
+  @each $size, $value in $spacers {
+    &-#{$size} {
+      padding-top: $value;
+      padding-bottom: $value;
+    }
+  }
+}
+
+//margin
+.m {
+  @each $size, $value in $spacers {
+    &-#{$size} {
+      margin: $value;
+    }
+  }
+}
+
+.mt {
+  @each $size, $value in $spacers {
+    &-#{$size} {
+      margin-top: $value;
+    }
+  }
+}
+
+.mr {
+  @each $size, $value in $spacers {
+    &-#{$size} {
+      margin-right: $value;
+    }
+  }
+}
+
+.ml {
+  @each $size, $value in $spacers {
+    &-#{$size} {
+      margin-left: $value;
+    }
+  }
+}
+
+.mb {
+  @each $size, $value in $spacers {
+    &-#{$size} {
+      margin-bottom: $value;
+    }
+  }
+}
+
+.mx {
+  @each $size, $value in $spacers {
+    &-#{$size} {
+      margin-left: $value;
+      margin-right: $value;
+    }
+  }
+}
+
+.my {
+  @each $size, $value in $spacers {
+    &-#{$size} {
+      margin-top: $value;
+      margin-bottom: $value;
     }
   }
 }

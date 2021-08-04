@@ -1,16 +1,7 @@
-@each $display in $display{
-    .d-#{$display}{
-        display: $display !important;
-    }
-}
-@each $point, $screen-size in $grid-breakpoints{
-    @if $point != xs{
-        @media screen and (min-width: $screen-size){
-            @each $display in $display{
-                .d-#{$display}-#{$point}{
-                    display: $display !important;
-                }
-            }
-        }
-    }
+@import "../../styles/config/utilities/display";
+
+@each $display in $display {
+  .d-#{$display} {
+    display: $display !important;
+  }
 }
