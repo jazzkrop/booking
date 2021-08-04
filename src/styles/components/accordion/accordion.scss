@@ -1,0 +1,41 @@
+@import "../../helpers/index.scss";
+
+.btn-accordion {
+	background-color: var(--color-transparent);
+	color: var(--color-gray-darken1);
+	font-size: map-get($font-size, subtitle2);
+	line-height: map-get($line-height, h6);
+	font-weight: map-get($font-weight, medium);
+	cursor: pointer;
+	border-top: map-get($border-width, bw-1) solid var(--color-gray-lighten7);
+	border-left: map-get($border-width, bw-1) solid var(--color-gray-lighten7);
+	border-right: map-get($border-width, bw-1) solid var(--color-gray-lighten7);
+	padding: map-get($spacers, md);
+
+	&:hover {
+		background-color: var(--color-gray-lighten8);
+	}
+}
+summary {
+	display: block;
+}
+::-webkit-details-marker {
+	display: none;
+}
+summary {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+}
+.accordion-border-top {
+	border-top: map-get($border-width, bw-1) solid var(--color-gray-lighten7);
+}
+.accordion-border-left {
+	border-left: map-get($border-width, bw-1) solid var(--color-gray-lighten7);
+}
+.accordion-border-right {
+	border-right: map-get($border-width, bw-1) solid var(--color-gray-lighten7);
+}
+.accordion-border-bottom {
+	border-bottom: map-get($border-width, bw-1) solid var(--color-gray-lighten7);
+}
