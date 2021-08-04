@@ -1,0 +1,96 @@
+@import url(../../config/index.scss);
+
+//
+
+.link-primary-xs-light {
+  color: var(--color-secondary-default);
+  font-size: var(--fs-caption2); // 12px
+  font-weight: var(--fw-normal);
+  line-height: var(--lh-body1);
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.link-primary-xs-bold {
+  color: var(--color-secondary-default);
+  font-size: var(--fs-caption2);
+  font-weight: var(--fw-semi-Bold);
+  line-height: var(--lh-body1);
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.link-secondary-sm {
+  color: var(--color-white-default);
+  line-height: var(--lh-body3);
+  text-decoration: underline;
+}
+
+.link-primary-sm {
+  color: var(--color-secondary-default);
+  font-size: var(--fs-caption1);
+  font-weight: var(--fw-normal);
+  line-height: var(--lh-body4);
+  text-decoration: none;
+  &:hover {
+    color: var(--color-brown-default);
+  }
+}
+
+.link-primary-xl {
+  color: var(--color-secondary-default);
+  font-size: var(--fs-h4);
+  font-weight: var(--fw-semi-Bold);
+  line-height: var(--lh-body4);
+  text-decoration: none;
+  &:hover {
+    color: var(--color-brown-default);
+  }
+}
+//////
+
+.link-primary-md {
+  font-size: var(--fs-body2);
+  color: var(--color-secondary-default);
+  line-height: var(--lh-h6);
+  text-decoration: none;
+}
+.link-lh-h3 {
+  line-height: var(--lh-h3);
+}
+.link-underline {
+  text-decoration: underline;
+}
+
+.link-underline-hover:hover {
+  text-decoration: underline;
+}
+
+.link-no-underline-hover:hover {
+  text-decoration: none;
+}
+
+.link-color-primary-hover:hover {
+  color: var(--color-brown-default);
+}
+
+.link-color-secondary-hover:hover {
+  color: var(--color-brown-default);
+}
+
+////hover on second page
+.link-block-color-hover:hover {
+  color: var(--color-secondary-lighten3);
+}
+
+///hover on main page
+.link-block-hover:hover {
+  background-color: rgba(255, 255, 255, 0.61);
+}
+.link-primary-sm-visited:visited {
+  color: var(--color-gray-lighten1);
+}

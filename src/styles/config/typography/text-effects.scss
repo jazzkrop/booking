@@ -1,0 +1,26 @@
+@import "../colors/index";
+
+$text-effects-colors: (
+  "black": var(--color-black-default),
+  "white": var(--color-white-default),
+  "grey": var(--color-grey-default),
+  "primary": var(--color-primary-default),
+  "secondary": var(--color-secondary-default),
+  "danger": var(--color-brown-default),
+  "success": var(--color-success-default),
+);
+
+@each $color in $text-effects-colors {
+  .text-effect-hover:hover {
+    color: $color !important;
+  }
+  .text-effect-active:active {
+    color: $color !important;
+  }
+  .text-effect-visited:visited {
+    color: $color !important;
+  }
+  .text-effect-disabled:disabled {
+    color: $color !important;
+  }
+}

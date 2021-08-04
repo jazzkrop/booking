@@ -1,0 +1,10 @@
+@import "../typography/index.scss";
+
+$button-line-heights: (
+  btn-lh-lg: map-get($line-height, h1),
+  btn-lh-md: map-get($line-height, h2),
+  btn-lh-sm: map-get($line-height, h4),
+  btn-lh-xs: map-get($line-height, subtitle1),
+  btn-lh-xxs: map-get($line-height, caption),
+  btn-lh-none: map-get($line-height, none),
+);

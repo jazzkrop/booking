@@ -1,0 +1,7 @@
+@import "../typography/index.scss";
+
+$button-font-size: (
+  btn-fs-lg: map-get($font-size, h6),
+  btn-fs-lg: map-get($font-size, subtitle2),
+  btn-fs-lg: map-get($font-size, body1),
+);

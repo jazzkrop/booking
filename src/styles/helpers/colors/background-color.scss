@@ -1,51 +1,18 @@
-@each $key, $value in $primary {
-  @if $key != "default" { // all items except default will have next changes
-    .bg-primary-#{$key} { // key - "lighten-1"
-      background-color: $value !important; // value - color hex
-    }
-  }
-  @else { //handling default value
-    .bg-primary {
-      background-color: $value !important;
-    }
-  }
-}
+$background-color: (
+  transparent: var(--color-transparent-default),
+  black: var(--color-black-default),
+  white: var(--color-white-default),
+  primary: var(--color-primary-default),
+  secondary: var(--color-secondary-default),
+  warning: var(--color-warning-default),
+  warning-lighten1: var(--color-warning-lighten1),
+  success: var(--color-success-default),
+  gray: var(--color-gray-default),
+  gray-lighten1: var(--color-gray-lighten1),
+);
 
-@each $key, $value in $secondary {
-  @if $key != "default" {
-    .bg-secondary-#{$key} { // key - "lighten-1", "lighten-2", "lighten-3", etc.
-      background-color: $value !important; // value - color hex
-    }
+@each $color in $background-color {
+  .bg-color-#{$color} {
+    background-color: $color !important;
   }
-  @else {
-    .bg-secondary {
-      background-color: $value !important;
-    }
-  }
-}
-
-@each $key, $value in $success {
-  @if $key != "default" {
-    .bg-success-#{$key} { // key - "darken-1", etc.
-      background-color: $value !important; // value - color hex
-    }
-  }
-  @else {
-    .bg-success {
-      background-color: $value !important;
-    }
-  }
-}
-
-.bg-alert {
-  background-color: $alert !important;
-}
-.bg-info {
-  background-color: $info !important;
-}
-.bg-black {
-  background-color: $black !important;
-}
-.bg-white {
-  background-color: $white !important;
 }

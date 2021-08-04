@@ -1,0 +1,105 @@
+@import "../../config/index.scss";
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img {
+  vertical-align: bottom;
+  display: inline-block;
+  object-fit: fill;
+
+  &-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  &-xxl {
+    height: 320px;
+    border-radius: map-get($border-radius, br-3);
+  }
+  &-xl {
+    height: 270px;
+    border-radius: map-get($border-radius, br-3);
+  }
+  &-lg {
+    height: 240px;
+    border-radius: map-get($border-radius, br-2);
+  }
+  &-md {
+    height: 200px;
+    border-radius: map-get($border-radius, br-2);
+  }
+  &-sm {
+    height: 170px;
+    border-radius: map-get($border-radius, br-2);
+  }
+  &-xs {
+    height: 135px;
+    border-radius: map-get($border-radius, br-1);
+  }
+  &-xxs {
+    height: 110px;
+    border-radius: ap-get($border-radius, br-1);
+  }
+  &-hover {
+    &-border:hover {
+      border: map-get($border-width, bw-1 solid var(--color-warning-lighten1);
+    }
+    &-shadow {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      &:hover {
+        
+      }
+    }
+    &-text-change {
+      & p {
+        margin: 0;
+        padding: var(--p-xs);
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        line-height: 2;
+        height: 24px;
+      }
+      &:hover > p {
+        height: 100%;
+      }
+    }
+    &-zoom {
+      transition: transform 0.4s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  &-container {
+    position: relative;
+    color: var(--color-white-default);
+    box-sizing: border-box;
+    overflow: hidden;
+    height: auto;
+  }
+  &-text {
+    &-top {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+    }
+    &-bottom {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+    }
+  }
+}
+    }
+  }
+}
