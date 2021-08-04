@@ -51,33 +51,33 @@ input {
 }
 // img
 .input-img-bad {
-  background-image: url(../../src/img/ico/bad.svg);
+  background-image: url(../../../images/ico/bad.svg);
   background-repeat: no-repeat;
   background-position-y: center;
   background-position-x: 13px;
 }
 .input-img-car {
-  background-image: url(../../src/img/ico/car1-xxl.svg);
+  background-image: url(../../../images/ico/car1-xxl.svg);
   background-repeat: no-repeat;
   background-position-y: center;
   background-position-x: 13px;
 }
 
 .input-img-search {
-  background-image: url(../../src/img/ico/search-xxl.svg);
+  background-image: url(../../../images/ico/search-xxl.svg);
   background-position-y: 50%;
   background-position-x: 10px;
   background-repeat: no-repeat;
 
   &-xl {
-    background-image: url(../../src/img/ico/search-xxl.svg);
+    background-image: url(../../../images/ico/search-xxl.svg);
     background-position-y: 50%;
     background-position-x: 5px;
     background-repeat: no-repeat;
   }
 }
 .select-img-arrow {
-  background-image: url(../../src/img/ico/arrowdouble.svg);
+  background-image: url(../../../images/ico/arrowdouble.svg);
   background-repeat: no-repeat;
   background-position-y: center;
   background-position-x: center;
@@ -234,13 +234,13 @@ input {
 
 .input-calendar-icon-xxl {
   background-position: top 50% left 16px;
-  background-image: url("../../src/img/ico/calendar1-xxl.svg");
+  background-image: url(../../../images/ico/calendar1-xxl.svg);
   background-repeat: no-repeat;
 }
 
 .input-user-counter-xxl {
-  background-image: url("../../src/img/ico/user-xxl.svg"),
-    url("../../src/img/ico/arrows.svg");
+  background-image: url("../../../images/ico/user-xxl.svg"),
+    url("../../../images/ico/arrows.svg");
   background-position: top 50% left 16px, top 50% right 16px;
   background-repeat: no-repeat;
 }
@@ -300,50 +300,50 @@ input {
 /* Airoport taxis search inputs */
 
 .input-location-icon {
-  background-image: url("../../src/img/ico/pin.svg");
+  background-image: url("../../../images/ico/pin.svg");
   background-position: top 50% left 16px;
   background-repeat: no-repeat;
 }
 
 .input-datepicker-icon {
-  background-image: url("../../src/img/ico/calendar3.svg");
+  background-image: url("../../../images/ico/calendar3.svg");
   background-position: top 50% left 16px;
   background-repeat: no-repeat;
 }
 
 .input-clock-icon {
-  background-image: url("../../src/img/ico/clock.svg");
+  background-image: url("../../../images/ico/clock.svg");
   background-position: top 50% left 16px;
   background-repeat: no-repeat;
 }
 
 .input-user-icon-counter {
-  background-image: url("../../src/img/ico/user.svg"),
-    url("../../src/img/ico/arrows.svg");
+  background-image: url("../../../images/ico/user.svg"),
+    url("../../../images/ico/arrows.svg");
   background-position: top 50% left 16px, top 50% right 16px;
   background-repeat: no-repeat;
 }
 
 .input-flight-icon-xxxl {
-  background-image: url("../../src/img/ico/flight-xxxl.svg");
+  background-image: url("../../../images/ico/flight-xxxl.svg");
   background-position: top 50% left 9px;
   background-repeat: no-repeat;
 }
 
 .input-calendar-xxxl {
-  background-image: url("../../src/img/ico/calendar-xxxl.svg");
+  background-image: url("../../../images/ico/calendar-xxxl.svg");
   background-position: top 50% left 9px;
   background-repeat: no-repeat;
 }
 
 .input-calendar1-xxl {
-  background-image: url("../../src/img/ico/calendar-xxl.svg");
+  background-image: url("../../../images/ico/calendar-xxl.svg");
   background-position: top 50% left 6px;
   background-repeat: no-repeat;
 }
 
 .input-car-xxl {
-  background-image: url("../../src/img/ico/car-xxl.svg");
+  background-image: url("../../../images/ico/car-xxl.svg");
   background-position: top 50% left 16px;
   background-repeat: no-repeat;
 }
