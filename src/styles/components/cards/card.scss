@@ -9,7 +9,6 @@
 
     &-warning {
         background-color: var(--color-warning-default);
-        // border-radius: map-get($border-radius, br-3);
-        border-radius: map-get($map: border-radius, $key: br-3);
+        border-radius: map-get($border-radius, br-3);
     }
 }
