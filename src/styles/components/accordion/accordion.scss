@@ -1,5 +1,16 @@
 @import "../../helpers/index.scss";
 
+summary {
+	display: block;
+}
+::-webkit-details-marker {
+	display: none;
+}
+summary {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+}
 .btn-accordion {
 	background-color: var(--color-transparent);
 	color: var(--color-gray-darken1);
@@ -15,17 +26,6 @@
 	&:hover {
 		background-color: var(--color-gray-lighten8);
 	}
-}
-summary {
-	display: block;
-}
-::-webkit-details-marker {
-	display: none;
-}
-summary {
-	box-sizing: border-box;
-	display: flex;
-	justify-content: space-between;
 }
 .accordion-border-top {
 	border-top: map-get($border-width, bw-1) solid var(--color-gray-lighten7);
