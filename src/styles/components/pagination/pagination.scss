@@ -1,0 +1,10 @@
+@import "../../config/offsets/offsets.scss";
+@import "../../config/typography/font-weight.scss";
+// @import "../../components/typography/base-classes.scss";
+
+
+
+.h4 {
+    font-weight: map-get($font-weight, semi-bold);
+    margin: map-get($spacers, none);
+}
