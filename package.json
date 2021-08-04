@@ -19,5 +19,8 @@
   "homepage": "https://github.com/jazzkrop/booking#readme",
   "dependencies": {
     "bootstrap": "^5.0.2"
+  },
+  "devDependencies": {
+    "sass": "^1.37.5"
   }
 }
