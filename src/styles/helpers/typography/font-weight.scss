@@ -1,6 +1,0 @@
-@import "../../config";
-@each $name, $value in $font-weight {
-  .fw-#{$name} {
-    font-weight: $value !important;
-  }
-}
