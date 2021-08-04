@@ -1,7 +1,0 @@
-@import "../../styles/config/utilities/position";
-
-@each $position, $value in $position {
-  .pos-#{$type} {
-    position: $value !important;
-  }
-}

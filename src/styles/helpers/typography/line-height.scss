@@ -1,3 +1,4 @@
+@import "../../config";
 @each $name, $value in $line-height {
   .lh-#{$name} {
     line-height: $value !important;
