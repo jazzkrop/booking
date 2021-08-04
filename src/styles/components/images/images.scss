@@ -41,11 +41,11 @@ img {
   }
   &-xxs {
     height: 110px;
-    border-radius: ap-get($border-radius, br-1);
+    border-radius: map-get($border-radius, br-1);
   }
   &-hover {
     &-border:hover {
-      border: map-get($border-width, bw-1 solid var(--color-warning-lighten1);
+      border: map-get($border-width, bw-1) solid var(--color-warning-lighten1);
     }
     &-shadow {
       position: absolute;
@@ -54,7 +54,7 @@ img {
       top: 0;
       bottom: 0;
       &:hover {
-        
+        box-shadow: ;
       }
     }
     &-text-change {
@@ -97,9 +97,6 @@ img {
       position: absolute;
       bottom: 16px;
       left: 16px;
-    }
-  }
-}
     }
   }
 }
