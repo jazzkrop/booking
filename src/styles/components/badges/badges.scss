@@ -1,0 +1,72 @@
+@import "../../helpers/index";
+
+$badge-review-sizes: (
+  sm: 22px,
+  md: 28px,
+  lg: 34px,
+);
+
+@each $point, $badge-size in $badge-review-sizes {
+  .badge-review-#{$point} {
+    width: $badge-size;
+    height: $badge-size;
+    border-radius: map-get($border-radius, br-5)
+      map-get($border-radius, br-5)
+      map-get($border-radius, br-5)
+      map-get($border-radius, none);
+    display: flex;
+    justify-content: center;
+    vertical-align: baseline;
+    align-items: center;
+    font-size: map-get($font-size, subtitle2);
+    line-height: map-get($line-height, h6);
+    font-weight: map-get($font-weight, medium);
+  }
+}
+
+.badge-review-filled {
+  background-color: var(--color-secondary-darken2);
+  color: var(--color-white-default);
+}
+
+.badge-review-filled-primary {
+  background-color: var(--color-primary-default);
+  color: var(--color-white-default);
+}
+
+.badge-review-outline {
+  box-sizing: border-box;
+  border: map-get($border-width, bw-1) $border-style-solid
+    var(--color-black-default);
+  color: var(--color-black-default);
+}
+
+.hotel-type-badge {
+  box-sizing: border-box;
+  margin-top: -3px;
+  border-radius: map-get($border-radius, br-4);
+  font-size: map-get($font-size, subtitle2);
+  line-height: map-get($line-height, body1);
+  font-weight: map-get($font-weight, normal);
+  padding: map-get($spacers, xxs) map-get($spacers, xs);
+  display: inline-flex;
+  justify-content: center;
+  vertical-align: baseline;
+  align-items: center;
+}
+
+.hotel-type-badge-success {
+  background: var(--color-success-darken);
+  color: var(--color-white-default);
+  border: map-get($border-width, bw-3) var(--color-transparent-default);
+}
+.hotel-type-badge-primary {
+  background: var(--color-primary-default);
+  color: var(--color-white-default);
+  border: map-get($border-width, bw-3) var(--color-transparent-default);
+}
+.hotel-type-badge-secondary {
+  background: var(--color-gray-darken3);
+  color: var(--color-white-default);
+  border: map-get($border-width, bw-3) var(--color-transparent-default);
+}
