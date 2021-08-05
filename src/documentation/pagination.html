@@ -4,46 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/components/pagination/pagination.scss"><title>Document</title>
+    <!-- <link rel="stylesheet" href="../styles/index.scss"> -->
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../styles/helpers/offsets/index.scss">
+    <link rel="stylesheet" href="../styles/components/typography/base-classes.scss">
+    <link rel="stylesheet" href="../styles/components/pagination/pagination.scss">
+    <link rel="stylesheet" href="../styles/components/links/links.scss">
+    <title>Document</title>
 </head>
 <body>
         <!-- pagination 1 -->
-    <div class="container-xl">
-        <div class="row"></div>            <div class="col">
-                <div class="card">
-                    <h2 class="h2">Text</h2>
-                    <div class="pagination-btn">
-                        <button type="button" class="page-btn" active>1</button>
-                        <button type="button" class="page-btn">2</button>
-                        <button type="button" class="page-btn">3</button>
-                        <button type="button" class="page-btn">4</button>
-                        <button type="button" class="page-btn">5</button>
-                        <button type="button" class="page-btn">6</button>
-                        <button type="button" class="page-btn">7</button>
-                        <button type="button" class="page-btn">8</button>
-                        <button type="button" class="page-btn">9</button>
-                        <button type="button" class="page-btn">10</button>
-                        <button type="button" class="page-btn">11</button>
-                        <button type="button" class="other-page">More countries</button>
+<div class="container">
+    <div class="pagination-wrapper pb-xs">
+        <div class="row">         
+            <div class="col">
+                    <h3 class="h3 fw-bold mb-md">Text</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="d-flex justify-content-end">
+                    <div class="d-flex justify-content-evenly">
+                        <div class="pagination-btn">
+                            <button type="button" class="page-btn page-btn-active">1</button>
+                            <button type="button" class="page-btn">2</button>
+                            <button type="button" class="page-btn">3</button>
+                            <button type="button" class="page-btn">4</button>
+                            <button type="button" class="page-btn">5</button>
+                            <button type="button" class="page-btn">6</button>
+                            <button type="button" class="page-btn">7</button>
+                            <button type="button" class="page-btn">8</button>
+                            <button type="button" class="page-btn">9</button>
+                            <button type="button" class="page-btn">10</button>
+                            <button type="button" class="page-btn">11</button>
+                            <a href="#" class="link-sm link-yellow-hover">More countries</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-        <!-- pagination 1 -->
-        <div class="card">
-            <div class="pagination-btn">
-                <button type="button" class="page-btn"><i class="fas fa-chevron-right"></i></button>
-                <button type="button" class="page-btn" active>1</button>
-                <button type="button" class="page-btn">2</button>
-                <button type="button" class="page-btn">3</button>
-                <button type="button" class="page-btn">4</button>
-                <button type="button" class="page-btn">5</button>
-                <button type="button" class="page-btn">...</button>
-                <button type="button" class="page-btn">40</button>
-                <button type="button" class="page-btn"><i class="fas fa-chevron-right"></i></button>
-                <button type="button" class="other-page">Text</button>
+</div>
+        <!-- pagination 2 -->
+        <!-- <div class="row">         
+            <div class="col">
+                    <div class="pagination-btn">
+                        <button type="button" class="page-btn"><i class="fas fa-chevron-right"></i></button>
+                        <button type="button" class="page-btn" active>1</button>
+                        <button type="button" class="page-btn">2</button>
+                        <button type="button" class="page-btn">3</button>
+                        <button type="button" class="page-btn">4</button>
+                        <button type="button" class="page-btn">5</button>
+                        <button type="button" class="page-btn">...</button>
+                        <button type="button" class="page-btn">40</button>
+                        <button type="button" class="page-btn"><i class="fas fa-chevron-right"></i></button>
+                        <button type="button" class="other-page">Text</button>
+                    </div>     
             </div>
-        </div>           
+        </div>      -->
 </body>
 </html>
