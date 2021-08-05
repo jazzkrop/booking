@@ -1,5 +1,42 @@
 @import "../../helpers/index.scss";
 
+* {
+        box-sizing: border-box;
+}
+.pagination-btn {
+    float: right;
+}
+h2 {
+    color: var(--color-gray-darken1);
+}
+.page-btn {
+        background-color: var(--color-gray-lighten3);
+        border: none;
+        cursor: pointer;
+        line-height: map-get($line-height, subtitle1);
+        font-size: map-get($font-size, body2);
+        padding: 0 map-get($spacers, sm) 0 map-get($spacers, sm);
+        color: var(--color-white-default);
+        font-family: $ff-default;
+        &:hover {
+                background-color: var(--color-secondary-default);
+        }
+}
+.page-btn-active {
+    background-color: var(--color-secondary-default);
+}
 
-
+.other-page {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: map-get($line-height, subtitle1);
+    font-size: map-get($font-size, body1);
+    font-family: $ff-default;
+    color: map-get($text-color, secondary);
+    font-weight: map-get($font-weight, normal);
+    &:hover {
+        color: var(--color-brown-default);
+    }
+}
 
