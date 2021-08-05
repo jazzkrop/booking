@@ -1,0 +1,31 @@
+@import "../../helpers/index.scss";
+
+.carousel {
+    margin: map-get($spacers, none);
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: map-get($spacers, none);
+    padding-right: map-get($spacers, none);
+    list-style-type: none;
+    list-style-image: initial;
+    list-style-position: initial;
+    position: relative;
+}
+
+.carousel-item {
+    display: flex !important;
+    flex-basis: initial;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding-right: map-get($spacers, md);
+}
+
+.carousel-nav {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    vertical-align: middle;
+    right: map-get($spacers, md);
+    z-index: 5;
+}
