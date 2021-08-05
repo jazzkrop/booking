@@ -1,0 +1,39 @@
+@import "../../../styles/index";
+
+.breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: var(--color-secondary-default);
+  margin: map-get($spacers, sm) map-get($spacers, none) map-get($spacers, none)
+    map-get($spacers, sm);
+}
+
+.breadcrumb-item-underlined {
+  text-decoration: underline;
+}
+
+.breadcrumb-item-default {
+  text-decoration: none;
+}
+
+.breadcrumb-item-inactive {
+  cursor: default !important;
+  color: var(--color-gray-lighten2);
+}
+
+.breadcrumb-separator {
+  margin: map-get($spacers, sm) map-get($spacers, none) map-get($spacers, none)
+    map-get($spacers, sm);
+  display: flex;
+  align-items: flex-end;
+  width: 16px;
+  height: 14px;
+  vertical-align: middle;
+}
