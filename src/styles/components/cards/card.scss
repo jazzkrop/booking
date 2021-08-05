@@ -1,14 +1,14 @@
-@import "../../../styles/index.scss";
+@import "../../helpers/index.scss";
 
 .card {
     border-radius: map-get($border-radius, br-2);
 
     &-white {
-        background-color: var(--color-white-default);
+        background-color: map-get($background-color, white);
     }
 
     &-warning {
-        background-color: var(--color-warning-default);
+        background-color: map-get($background-color, warning);
         border-radius: map-get($border-radius, br-3);
     }
 }
