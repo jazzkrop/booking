@@ -46,12 +46,11 @@
    &-white-hover:hover{
     color: map-get($text-color, white );
    }
-  
-   &-underline{
+  &-underline{
+      text-decoration: underline;
+  }
+   &-underline-hover:hover{
        text-decoration: underline;
-       &-hower:hover{
-        text-decoration: underline;
-       }
    }
    &-gray-visited:visited{
      color: var(--color-gray-lighten1);
