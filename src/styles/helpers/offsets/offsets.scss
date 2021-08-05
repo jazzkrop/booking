@@ -1,4 +1,4 @@
-@import "../../config/offsets/index.scss";
+@import "../../config";
 
 .p {
   @each $size, $value in $spacers {
