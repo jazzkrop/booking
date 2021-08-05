@@ -3,33 +3,29 @@
 .carousel {
     margin: map-get($spacers, none);
     position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: map-get($spacers, none);
+    padding-right: map-get($spacers, none);
+    list-style-type: none;
+    list-style-image: initial;
+    list-style-position: initial;
+    position: relative;
+}
 
-    &-inner {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-left: map-get($spacers, none);
-        padding-right: map-get($spacers, none);
-        list-style-type: none;
-        list-style-image: initial;
-        list-style-position: initial;
-        width: 100%;
-        overflow-x: scroll;
-        scroll-behavior: smooth;
+.carousel-item {
+    display: flex !important;
+    flex-basis: initial;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding-right: map-get($spacers, md);
+}
 
-        &-item {
-            flex-basis: auto;
-            flex-grow: 0;
-            flex-shrink: 0;
-            padding-right: map-get($spacers, md);
-            width: calc((100% - 64px) / 5);
-        }
-    }
-
-    &-nav {
-        display: flex;
-        position: absolute;
-        top: 50%;
-        left: map-get($spacers, md);
-        right: map-get($spacers, md);
-    }
+.carousel-nav {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    vertical-align: middle;
+    right: map-get($spacers, md);
+    z-index: 5;
 }
