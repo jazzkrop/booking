@@ -3,34 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <title>forms</title>
-    <link rel="stylesheet" href="input.scss" />
+    <link rel="stylesheet" href="../../src/styles/components/inputs/input.scss"/>
   </head>
   <body>
+
     <input
-      class="input-xxl input-calendar-icon-xxl"
+    class="input-xxl input-img-bed-xxl"
+    type="search"
+    placeholder="Where are you going?"
+    />
+
+    <input
+      class="input-xxl input-calendar-2"
       type="text"
       placeholder="Check in  –  Check out"
     />
     <input
       type="text"
-      class="input-xxl input-user-counter-xxl"
+      class="input-xxl input-user-xxl"
       placeholder="2 adults  ·  0 children  ·  1 room "
     />
 
     <input
+        class="input-xl input-img-search-xxl"
+        type="text"
+        placeholder="City"
+    />
+
+    <input
       type="text"
-      class="input-xl input-calendar1-xxl"
+      class="input-xl input-calendar-empty-xxl"
       placeholder="Thursday, July 29, 2021"
     />
     <div></div>
     <input
       type="text"
-      class="input-xl input-calendar1-xxl"
+      class="input-xl input-calendar-empty-xxl"
       placeholder="Saturday, July 31, 2021"
     />
     <div></div>
 
-    <div class="#" style="width: 300px; margin-bottom: 20px">
+    
       <!--        Check-in date-->
       <div class="date-checker fc-secondary-default bc-secondary-default-hov">
         <i
@@ -41,10 +54,9 @@
         </div>
         <i class="fas fa-chevron-down color-secondary-default-hov"></i>
       </div>
-    </div>
+  
 
     <!--        Check-out date-->
-    <div class="#" style="width: 300px; margin-bottom: 20px">
       <div class="date-checker fc-secondary-default bc-secondary-default-hov">
         <i
           class="far fa-calendar-alt fs-h6 p-xs color-secondary-default-hov"
@@ -54,7 +66,6 @@
         </div>
         <i class="fas fa-chevron-down color-secondary-default-hov"></i>
       </div>
-    </div>
 
     <!--    Airport taxis-->
     <div>
@@ -85,7 +96,7 @@
       readonly
     />
     <input
-      class="input-xxxl input-user-icon-counter"
+      class="input-xxxl input-user-xxxl"
       type="text"
       placeholder="1"
       readonly
@@ -113,16 +124,101 @@
 
     <!-- Car rental -->
     <input
-      class="input-xxl input-calendar-icon-xxl"
+      class="input-xxl input-calendar-2"
       type="text"
       placeholder="Thu, Jul 29, 10:00"
       readonly
     />
     <input
-      class="input-xxl input-calendar-icon-xxl"
+      class="input-xxl input-calendar-2"
       type="text"
       placeholder="Sun, Aug 1, 10:00"
       readonly
     />
+
+  
+    
+    <!-- text -->
+    <label>
+      
+    </label>
+
+
+    <div><br /></div>
+    <label>
+      <input
+        class="input-xxl input-img-car"
+        type="text"
+        placeholder="Pickup location"
+      />
+    </label>
+    <label>
+      <input
+        class="input-xxl input-img-car"
+        type="text"
+        placeholder="Drop of location"
+      />
+    </label>
+    
+
+    <input
+        class="input-xxxl fw-normal-place fs-subtitle2 input-img-search-xxxl border-none"
+        type="search"
+        placeholder="Desctinations, museums, tours..."
+      />
+
+    <!-- email -->
+    <div><br /></div>
+    <label>
+        <div class="border-input-white">
+          <input
+            class="input-paired-lg "
+            type="email"
+            placeholder="Your email"
+          />
+        </div>
+    </label>
+   
+    <!-- checkbox -->
+    <!-- <label>
+      <input class="chbx-sm cursor-pointer" type="checkbox" />
+    </label>
+    <div class="checkbox">
+      <input class="custom-checkbox-md" type="checkbox" id="checkbox-xl" />
+      <label for="checkbox-xl"></label>
+    </div>
+    <div class="checkbox">
+      <input class="custom-checkbox-lg" type="checkbox" id="checkbox-md" />
+      <label for="checkbox-md"></label>
+    </div> -->
+    <!-- radio -->
+    <div class="radio-button">
+      <input
+        type="radio"
+        class="chbx-lg"
+        name="value"
+        value="Return to same location"
+      />
+      <div>Return to same location</div>
+    </div>
+    <div class="radio-button">
+      <input
+        type="radio"
+        class="chbx-lg"
+        name="value"
+        value="Return to same location"
+      />
+      <div>Return to different location</div>
+    </div>
+    <!-- select -->
+    <select class="select_sm cursor-pointer">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+    </select>
+
   </body>
 </html>
