@@ -1,0 +1,14 @@
+@import "../../helpers/index.scss";
+
+.card {
+    border-radius: map-get($border-radius, br-2);
+
+    &-white {
+        background-color: map-get($background-color, white);
+    }
+
+    &-warning {
+        background-color: map-get($background-color, warning);
+        border-radius: map-get($border-radius, br-3);
+    }
+}

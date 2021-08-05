@@ -1,4 +1,4 @@
-
+@import "../../config/index.scss";
 //bp array are in config border-position
 //position shows where border is (top, bottom, left, right)
 @each $position in $bp{

@@ -11,8 +11,8 @@ $text-color: (
   gray-lighten1: var(--color-gray-lighten1),
 );
 
-@each $color in $text-color {
+@each $color, $value in $text-color {
   .text-color-#{$color} {
-    color: $color !important;
+    color: $value !important;
   }
 }

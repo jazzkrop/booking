@@ -1,7 +1,0 @@
-@import "../../styles/config/utilities/display";
-
-@each $display in $display {
-  .d-#{$display} {
-    display: $display !important;
-  }
-}
