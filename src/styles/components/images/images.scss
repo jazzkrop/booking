@@ -1,1 +1,213 @@
-@import "../../helpers";
+@import '../../helpers/index.scss';
+
+img {
+  width: auto;
+  height: 100%;
+  display: block;
+}
+
+.img {
+  vertical-align: bottom;
+  display: inline-block;
+  object-fit: fill;
+
+  &-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  //sizes
+  &-xxl {
+    height: 320px;
+    border-radius: map-get($border-radius, br-3);
+  }
+  &-xl {
+    height: 270px;
+    border-radius: map-get($border-radius, br-3);
+  }
+  &-lg {
+    height: 240px;
+    border-radius: map-get($border-radius, br-2);
+  }
+  &-md {
+    height: 200px;
+    border-radius: map-get($border-radius, br-2);
+  }
+  &-sm {
+    height: 170px;
+    border-radius: map-get($border-radius, br-2);
+  }
+  &-xs {
+    height: 135px;
+    border-radius: map-get($border-radius, br-1);
+  }
+  &-xxs {
+    height: 110px;
+    border-radius: map-get($border-radius, br-1);
+  }
+
+  &-hover {
+    &-border:hover {
+      border: map-get($border-width, bw-1) solid var(--color-warning-lighten1);
+    }
+    &-text-move {
+      & p {
+        margin: 0;
+        padding: map-get($spacers, sm);
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        height: 24px;
+      }
+      &:hover > p {
+        height: 100%;
+      }
+    }
+    &-zoom {
+      &-default {
+        transition: transform 0.4s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+      &-bigger {
+        transition: transform 0.4s;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+      &-smaller {
+        transition: transform 0.4s;
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+  &-container {
+    position: relative;
+    color: var(--color-white-default);
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  &-text {
+    &-top {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: map-get($spacers, md);
+      &.overlay {
+        &hover {
+          &-default:hover {
+            background: linear-gradient(
+              rgba(0, 27, 65, 0.85) 0px,
+              rgba(0, 27, 65, 0) 100%
+            );
+          }
+          &-darken:hover {
+            background: linear-gradient(
+              180deg,
+              #000 0,
+              rgba(0, 0, 0, 0.8) 50%,
+              transparent
+            );
+          }
+          &-lighten:hover {
+            background: linear-gradient(
+              180deg,
+              rgba(0, 0, 0, 0.8) 0,
+              rgba(33, 33, 33, 0.8) 40%,
+              transparent
+            );
+          }
+          &-none:hover {
+            background: rgba(0, 0, 0, 0);
+          }
+        }
+        &-default {
+          background: linear-gradient(
+            rgba(0, 27, 65, 0.85) 0px,
+            rgba(0, 27, 65, 0) 100%
+          );
+        }
+        &-darken {
+          background: linear-gradient(
+            180deg,
+            #000 0,
+            rgba(0, 0, 0, 0.8) 50%,
+            transparent
+          );
+        }
+        &-lighten {
+          background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.8) 0,
+            rgba(33, 33, 33, 0.8) 40%,
+            transparent
+          );
+        }
+      }
+    }
+    &-bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: map-get($spacers, md);
+      &.overlay {
+        &hover {
+          &-default:hover {
+            background: linear-gradient(
+              rgba(0, 27, 65, 0) 0px,
+              rgba(0, 27, 65, 0.85) 100%
+            );
+          }
+          &-darken:hover {
+            background: linear-gradient(
+              0deg,
+              #000 0,
+              rgba(0, 0, 0, 0.8) 50%,
+              transparent
+            );
+          }
+          &-lighten:hover {
+            background: linear-gradient(
+              0deg,
+              rgba(0, 0, 0, 0.8) 0,
+              rgba(33, 33, 33, 0.8) 40%,
+              transparent
+            );
+          }
+          &-none:hover {
+            background: rgba(0, 0, 0, 0);
+          }
+        }
+        &-default {
+          background: linear-gradient(
+            rgba(0, 27, 65, 0) 0px,
+            rgba(0, 27, 65, 0.85) 100%
+          );
+        }
+        &-darken {
+          background: linear-gradient(
+            0deg,
+            #000 0,
+            rgba(0, 0, 0, 0.8) 50%,
+            transparent
+          );
+        }
+        &-lighten {
+          background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.8) 0,
+            rgba(33, 33, 33, 0.8) 40%,
+            transparent
+          );
+        }
+      }
+    }
+  }
+}
