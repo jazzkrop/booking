@@ -1,0 +1,52 @@
+@import "../../helpers/index.scss";
+
+.btn-nav {
+	z-index: 1;
+	font-family: $ff-default;
+	color: var(--color-secondary-default);
+	background-color: var(--color-white-default);
+	cursor: pointer;
+	position: relative;
+	box-sizing: border-box;
+	display: list-item;
+	border-color: var(--color-secondary-default);
+	border-radius: map-get($border-radius, br-none);
+	border-width: map-get($border-width, bw-1);
+	border-style: $border-style-solid;
+	font-size: map-get($font-size, body1);
+	font-weight: map-get($font-weight, normal);
+	line-height: map-get($line-height, subtitle1);
+	padding: map-get($spacers, sm) map-get($spacers, sm);
+	height: 100%;
+	a {
+		display: block;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		color: var(--color-secondary-default);
+	}
+	&:hover {
+		background-color: var(--color-secondary-lighten3);
+	}
+
+	&-left-border:first-child {
+		border-radius: map-get($border-radius, br-2)
+			map-get($border-radius, br-none) map-get($border-radius, br-none)
+			map-get($border-radius, br-3);
+		border-right: none;
+	}
+	&-right-border:last-child {
+		border-radius: map-get($border-radius, br-none)
+			map-get($border-radius, br-2) map-get($border-radius, br-2)
+			map-get($border-radius, br-none);
+		border-left: none;
+	}
+}
+.active-tab {
+	&:focus {
+		z-index: 100;
+		background-color: var(--color-secondary-default);
+		color: var(--color-white-default);
+		box-shadow: 0px 0px 0px 3px var(--color-secondary-shadow);
+	}
+}
