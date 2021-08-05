@@ -127,25 +127,25 @@
 		font-weight: map-get($font-weight, light);
 	}
 	&-md {
-		padding: map-get($spacers, md) map-get($spacers, md);
-		line-height: map-get($line-height, subtitle1);
+		padding: map-get($spacers, sm) map-get($spacers, sm);
+		line-height: map-get($line-height, h6);
 		font-size: map-get($font-size, h6);
 		font-weight: map-get($font-weight, medium);
 	}
 	&-sm {
-		padding: map-get($spacers, md) map-get($spacers, md);
+		padding: map-get($spacers, sm) map-get($spacers, sm);
 		line-height: map-get($line-height, subtitle1);
 		font-size: map-get($font-size, body1);
 		font-weight: map-get($font-weight, medium);
 	}
 	&-xs {
-		padding: map-get($spacers, md) map-get($spacers, md);
+		padding: map-get($spacers, sm) map-get($spacers, sm);
 		line-height: map-get($line-height, subtitle1);
 		font-size: map-get($font-size, body1);
 		font-weight: map-get($font-weight, medium);
 	}
 	&-xxs {
-		padding: map-get($spacers, md);
+		padding: map-get($spacers, sm);
 		line-height: map-get($line-height, h2);
 		font-size: map-get($font-size, subtitle2);
 		font-weight: map-get($font-weight, light);
