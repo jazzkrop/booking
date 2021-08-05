@@ -1,15 +1,8 @@
-//root
-@import "colors";
-@import "rhythm";
-@import "sizes";
-
-//reference
-@import "utilities";
-@import "colors";
-@import "borders";
-@import "offsets";
-@import "typography";
-
-@import "grid";
-@import "z-index";
-@import "visibility";
+@import 'borders/index.scss';
+@import 'buttons/index.scss';
+@import 'colors/index.scss';
+@import 'colors/index.scss';
+@import 'offsets/index.scss';
+@import 'typography/index.scss';
+@import 'utilities/index.scss';
+@import 'visibility/index.scss';
