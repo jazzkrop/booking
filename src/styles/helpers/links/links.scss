@@ -1,57 +1,64 @@
-@import url(../../config/index.scss);
 
-
+@import "../../helpers";
 
 .link{
-    text-decoration: none;
-        
-        &-xs{
-            font-size: map-get($font-size, body2); 
-            line-height: map-get($line-height, body2 );
-            font-weight: map-get($font-weight, normal );
-        }
-        &-sm{
-            font-size: map-get($font-size, body1); // 14px
-            line-height: map-get($line-height body1);
-            font-weight: map-get($font-weight, normal );
-        }
-        &-md{
-            font-size: map-get($font-size, subtitle2); // 16px
-            line-height: map-get($line-height, subtitle2);
-            font-weight: map-get($font-weight, normal );
-        }
-        &-xl{
-            font-size: map-get($font-size, h6); // 20px
-            line-height: map-get($line-height , h6 );
-            font-weight: map-get($font-weight, normal );
-        }
+  text-decoration: none;
+  &:hover{
+    color: map-get($text-color, warning);
+  }
+      &-xs{
+          font-size: map-get($font-size, body2); 
+          line-height: map-get($line-height, body2 );
+          font-weight: map-get($font-weight, normal );
+      }
+      &-sm{
+          font-size: map-get($font-size, body1); // 14px
+          line-height: map-get($line-height body1);
+          font-weight: map-get($font-weight, normal );
+      }
+      &-md{
+          font-size: map-get($font-size, subtitle2); // 16px
+          line-height: map-get($line-height, subtitle2);
+          font-weight: map-get($font-weight, normal );
+      }
+      &-xl{
+          font-size: map-get($font-size, h6); // 20px
+          line-height: map-get($line-height , h6 );
+          font-weight: map-get($font-weight, normal );
+      }
 
-   &-primary{
-       color:var(--color-secondary-default) ;
-   }
-   &-white{
-       color:var(--color-white-default) ;
-   }
-   &-bold{
-       font-weight: map-get($font-weight, bold ) ;
-   }
-   &-normal{
-    font-weight: map-get($font-weight, normal ) ;
-   }
-  
-   &-yellow-hower:hover{
-       color: var(--color-warning-default)
-   }
-   &-black-hower:hover{
-       color: var(--color-gray-default);
-   }
+ &-primary{
+     color: map-get($text-color, secondary);
+ }
+ &-white{
+     color: map-get($text-color, white );
+ }
+ &-bold{
+     font-weight: map-get($font-weight, bold ) ;
+ }
+ &-normal{
+  font-weight: map-get($font-weight, normal ) ;
+ }
 
-   &-underline{
-       text-decoration: underline;
-       &-hower:hover{
-        text-decoration: underline;
-       }
-   }
+ &-yellow-hower:hover{
+     color: map-get($text-color, warning );
+ }
+ &-black-hower:hover{
+     color: map-get($text-color, gray );
+ }
+ &-white-hower:hover{
+  color: map-get($text-color, white );
+ }
+
+ &-underline{
+     text-decoration: underline;
+     &-hower:hover{
+      text-decoration: underline;
+     }
+ }
+ &-gray-visited:visited{
+   color: var(--color-gray-lighten1);
+ }
 };
 
 
