@@ -1,44 +1,4 @@
-@import "../../config/offsets/offsets.scss";
-@import "../../config/typography/font-weight.scss";
-// @import "../../components/typography/base-classes.scss";
-
-.h4 {
-    font-weight: map-get($font-weight, semi-bold);
-    margin: map-get($spacers, none);
-}
+@import "../../helpers/index.scss";
 
 
-.pagination-buttons {
-    margin: 0;
-    font-family: var(--ff-default);
-    display: inline-block;
-    float: right;
-}
 
-.card {
-    padding-bottom: 5px;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.page-btn {
-    background-color: gray;
-    border: none;
-    cursor: pointer;
-    line-height: 20px;
-    font-size: 13px;
-    padding: 0 7px;
-    color: white;
-}
-
-.other-page {
-    background: none;
-    border: none;
-    cursor: pointer;
-    line-height: 20px;
-    font-size: 13px;
-    padding: 0 7px;
-    color: gray;    
-}
