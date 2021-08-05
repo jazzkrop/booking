@@ -1,0 +1,45 @@
+@import "../../helpers/index.scss";
+
+
+.tab{
+    display: flex;
+    border-bottom: map-get($border-width , bw-1 ) solid map-get($border-color , secondary);
+   
+    
+}
+
+.tab-btn{
+   border: none;
+   background-color: map-get($background-color  , transparent );
+   font-size: map-get($font-size , body1);
+   padding:  map-get($spacers, paired-sm);
+   &:hover{
+       color: map-get($text-color, secondary );
+   }
+   &:focus{
+       color: map-get($text-color, white);
+       background-color: map-get($text-color , secondary );
+   }
+}
+
+///// tab on atraction page
+
+.tab-atraction{
+    display: flex;
+    border-bottom: map-get($border-width , bw-1 ) solid map-get($border-color , gray-lighten8);
+}
+
+.tab-btn-atraction{
+   border: none;
+   background-color: map-get($background-color  , transparent );
+   font-size: map-get($font-size , body1);
+   padding:  map-get($spacers, paired-sm);
+   &:hover{
+    background-color: map-get($background-color , gray-lighten8 );
+   }
+   &:focus{
+       color: map-get($text-color, secondary);
+       border-bottom:  map-get($border-width , bw-2 ) solid map-get($border-color , secondary);
+       
+   }
+}
