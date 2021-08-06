@@ -411,7 +411,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -522,7 +522,7 @@ a {
 }
 
 .bg-color-secondary {
-  background-color: var(--color-secondary-default);
+  background-color: var(--color-secondary-default) !important;
 }
 
 .bg-color-warning {
@@ -2274,7 +2274,7 @@ input {
 }
 
 .custom-checkbox-lg + label::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -2289,7 +2289,7 @@ input {
 }
 
 .custom-checkbox-md + label::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 100%;
   height: 100%;
