@@ -254,7 +254,7 @@ a {
 .bg-color-warning-lighten1 {
     background-color: var(--color-warning-lighten1);
 }
-.bg-color-danger-lighten2{
+.bg-color-danger-lighten2 {
     background-color: var(--color-danger-lighten2);
 }
 
@@ -317,6 +317,10 @@ a {
 
 .border-color-gray-lighten1 {
     border-color: var(--color-gray-lighten1) !important;
+}
+
+.border-color-gray-lighten8 {
+    border-color: var(--color-gray-lighten8) !important;
 }
 
 .text-color-transparent {
