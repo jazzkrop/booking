@@ -1800,15 +1800,18 @@ summary {
 
 .card {
   border-radius: 2px;
+  border-width: 0;
 }
 
 .card-white {
   background-color: var(--color-white-default);
+  border-width: 1px;
 }
 
 .card-warning {
   background-color: var(--color-warning-default);
   border-radius: 3px;
+  border-width: 1px;
 }
 
 .carousel {
