@@ -3,60 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="../build/css/style.css">
+    <link rel="stylesheet" href="../styles/config/icons/fontawesome-free-5.15.3-web/css/all.css">
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap-grid.css"/>
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css"/>
-    <link rel="stylesheet" href="../styles/pages/airport-taxis/airport-taxis.scss">
-    
+    <link rel="stylesheet" href="../build/airport-taxis/airport-taxis.css">
+    <link rel="stylesheet" href="../build/css/style.css">
 </head>
 <body>
     <main>
         <div class="page">
 <!--    Book taxis block    -->
             <div class="book-taxis-bg">
-                <div class="container-xl">
+                <div class="container-xl d-flex align-items-center">
                     <!-- <div class="align-items-center"> -->
                         <div class="row width-full">
-                            <div class="col">
+                            <div class="col p-0">
                                 <div>
-                                    <div class="row book-taxis-title">Book your airport taxi </div>
-                                    <div class="row book-taxis-subtitle">Easy transportation between the airport and your accommodations</div>
+                                    <div class="h1">Book your airport taxi </div>
+                                    <div class="subtitle2 fw-semi-bold">Easy transportation between the airport and your accommodations</div>
                                 </div>
                                 <div>
-
-
                                     <div class="row my-lg">
-                                        <div class="col align-items-center radio-row">
-                                                <input type="radio" class="chbx-lg" name="value" value="Return to same location">
-                                                <span class="mr-md fs-body">One-way</span>
+                                        <div class="col d-flex ">
+                                                <div class="d-flex align-items-center">
+                                                    <input type="radio" class="chbx-lg mr-sm" name="value" value="Return to same location">
+                                                    <span class="mr-md fs-body1">One-way</span>
+                                                </div>
 
-                                                <input type="radio" class="chbx-lg" name="value" value="Return to different location">
-                                                <span class="fs-body">Return</span>
+                                                <div class="d-flex align-items-center">
+                                                    <input type="radio" class="chbx-lg mr-sm" name="value" value="Return to different location">
+                                                    <span class="fs-body1">Return</span>
+                                                </div>
                                         </div>
                                     </div>
 
                                     <div class="row form-search-panel">
-                                        <div class="">
+                                        <div class="col-3 pl-none pr-xs">
                                                 <input type="text" class="input-xxxl input-location-icon" placeholder="Enter pick-up location" readonly>
                                         </div>
 
-                                        <div class="pl-xs">
+                                        <div class="col-3 pl-none pr-xs">
                                              <input type="text" class="input-xxxl input-location-icon" placeholder="Enter destination" readonly>
                                         </div>
 
-                                        <div class="pl-xs">
+                                        <div class="col-2 pl-none pr-xs">
                                             <input type="text" class="input-xxxl input-datepicker-icon p-xxl" placeholder="31/07/2021" readonly>
                                         </div>
 
-                                        <div class="col pl-xs pr-xs-md">
+                                        <div class="col pl-none pr-xs">
                                             <input type="text" class="input-xxxl input-clock-icon" placeholder="12:00" readonly>
                                         </div>
 
-                                        <div class="col pl-xs">
+                                        <div class="col pl-none pr-xs">
                                             <input type="text" class="input-xxxl input-user-icon-counter" placeholder="1" readonly>
                                         </div>
 
-                                        <div class="col pl-xs ">
+                                        <div class="col p-none">
                                             <button name="primary-search" type="button" class="btn btn-primary btn-xxl btn-rounded-noborder-md btn-primary-hover search" >Search</button>
                                         </div>
                                     </div>
@@ -68,8 +70,8 @@
             </div>
 <!--    book taxis block end-->
 <!--      book taxis inform  -->
-                <div class="color-gray-lighten2">
-                    <div class="container">
+                <div class="bg-color-gray-lighten9">
+                    <div class="container-xl">
 
                             <div class="row py-md">
 
@@ -79,22 +81,22 @@
                                             <i class="fas fa-plane"></i>
                                         </div>
 
-                                        <div class="col fs-body">
-                                            <div class="taxis-inform-title">Flight tracking</div>
-                                            <div class="taxis-inform-subtitle">Your driver will track your flight and wait <br> for you if it's delayed</div>
+                                        <div class="col">
+                                            <div class="body1 fw-bold lh-subtitle1">Flight tracking</div>
+                                            <div class="body1 color-gray-lighten2 lh-subtitle1">Your driver will track your flight and wait <br> for you if it's delayed</div>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="col-4">
                                     <div class="row">
-                                        <div class="bg-circle-icon bg-color-danger-lighten1 mr-md">
+                                        <div class="bg-circle-icon bg-color-danger-lighten2 mr-md">
                                             <i class="far fa-credit-card"></i>
                                         </div>
 
-                                        <div class="col fs-body">
-                                            <div class="taxis-inform-title">One clear price</div>
-                                            <div class="taxis-inform-subtitle">Your price is confirmed up front – no extra <br> costs, no cash required</div>
+                                        <div class="col">
+                                            <div class="body1 fw-bold lh-subtitle1">One clear price</div>
+                                            <div class="body1 color-gray-lighten2 lh-subtitle1">Your price is confirmed up front – no extra <br> costs, no cash required</div>
                                         </div>
                                     </div>
                                 </div>
@@ -105,9 +107,9 @@
                                             <i class="fas fa-check"></i>
                                         </div>
 
-                                        <div class="col fs-body">
-                                            <div class="taxis-inform-title">Tried and true service</div>
-                                            <div class="taxis-inform-subtitle">We work with professional drivers and <br> have 24/7 customer care</div>
+                                        <div class="col fs-body lh-subtitle1">
+                                            <div class="body1 fw-bold lh-subtitle1">Tried and true service</div>
+                                            <div class="body1 color-gray-lighten2 lh-subtitle1">We work with professional drivers and <br> have 24/7 customer care</div>
                                         </div>
                                     </div>
                                 </div>
@@ -120,130 +122,136 @@
             <!--      Airport transportation made easy      -->
                 <div class="py-xl">
                     <div class="container-xl">
-                        <div class="col transportation-feauters-title mb-paired-lg lh-h1">Airport transportation made easy</div>
+                            <div class="col h1 mb-paired-lg d-flex justify-content-center">Airport transportation made easy</div>
+                            <div>
+                                <div class="row justify-content-between">
+                                    <div class="col px-md py-lg">
 
-                        <div>
-                            <div class="row jc-space-between">
-                                <div class="col px-md py-lg">
-                                    <div class="row">
-                                        <div class="align-items-center">
-                                            <div class="mr-md">
-                                                <img src="../images/airport-taxis/cars.svg" alt="">
+                                        <div class="col d-flex">
+
+                                            <div class="align-items-center">
+                                                <div class="mr-md">
+                                                    <img src="../images/airport-taxis/cars.svg" alt="">
+                                                </div>
+                                            </div>
+
+                                            <div class="">
+                                                    <div class="h6 mt-paired-md mb-0">Booking your airport taxi</div>
+                                                <div class="body1 lh-subtitle1 color-gray-lighten2 py-md">Confirmation is immediate. If your plans change, you can cancel for free<br>up to 24 hours before your scheduled pickup time</div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col d-flex">
+                                            <div class="align-items-center">
+                                                <div class="mr-md">
+                                                    <img src="../images/airport-taxis/drivers.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <div class="h6 mt-paired-md mb-0">Meeting your driver</div>
+                                                <div class="body1 lh-subtitle1 color-gray-lighten2 py-md">You'll be met on arrival and taken to your vehicle. The driver will track<br>your flight, so they'll be waiting if it's delayed</div>
                                             </div>
                                         </div>
-                                        <div class="">
-                                                <div class="transportation-features-header mt-paired-md">Booking your airport taxi</div>
-                                            <div class="taxis-inform-subtitle py-md">Confirmation is immediate. If your plans change, you can cancel for free<br>up to 24 hours before your scheduled pickup time</div>
+
+                                        <div class="col d-flex">
+                                            <div class="align-items-center">
+                                                <div class="mr-md">
+                                                    <img src="../images/airport-taxis/destination.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="mr-md">
+                                                <div class="h6 mt-paired-md mb-0">Arriving at your destination</div>
+                                                <div class="body1 lh-subtitle1 color-gray-lighten2 py-md">Get to your destination quickly and safely – no long lines for a taxi, no <br> navigating public transit</div>
+                                            </div>
                                         </div>
                                     </div>
 
-                                    <div class="row">
-                                        <div class="align-items-center">
-                                            <div class="mr-md">
-                                                <img src="../images/airport-taxis/drivers.svg" alt="">
+
+                                    <div class="col d-flex align-items-center justify-content-center">
+                                            <div class="how-it-work-map body1">
+                                                <div class="work p-sm br-br-4 bg-color-gray-lighten9">How does it work?</div>
+                                                <div class="book">Book online</div>
+                                                <div class="confirmation">Receive confirmation</div>
+                                                <div class="arrive">Arrive at your<br>destination</div>
+                                                <div class="driver">Meet your driver</div>
+                                                <div class="enjoy">Enjoy your trip!</div>
+                                                <img class="" src="../images/airport-taxis/airport-taxis-map.svg" alt="">
                                             </div>
-                                        </div>
-                                        <div class="">
-                                            <div class="transportation-features-header mt-paired-md">Meeting your driver</div>
-                                            <div class="taxis-inform-subtitle py-md">You'll be met on arrival and taken to your vehicle. The driver will track<br>your flight, so they'll be waiting if it's delayed</div>
-                                        </div>
                                     </div>
-
-                                    <div class="row">
-                                        <div class="align-items-center">
-                                            <div class="mr-md">
-                                                <img src="../images/airport-taxis/destination.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="mr-md">
-                                            <div class="transportation-features-header mt-paired-md">Arriving at your destination</div>
-                                            <div class="taxis-inform-subtitle py-md">Get to your destination quickly and safely – no long lines for a taxi, no <br> navigating public transit</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="col how-it-work jc-center ">
-                                        <div class="how-it-work-map ">
-                                            <div class="work">How does it work?</div>
-                                            <div class="book">Book online</div>
-                                            <div class="confirmation">Receive confirmation</div>
-                                            <div class="arrive">Arrive at your<br>destination</div>
-                                            <div class="driver">Meet your driver</div>
-                                            <div class="enjoy">Enjoy your trip!</div>
-                                            <img class="" src="../images/airport-taxis/airport-taxis-map.svg" alt="">
-                                        </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
             <!--   ///   Airport transportation made easy      -->
 
             <!-- Airport taxis for any kind of trip -->
-            <div class="color-gray-lighten2 py-lg">
+            <div class="bg-color-gray-lighten9 py-lg">
                 <div class="container-xl">
-                    <div class="jc-center fs-h4 fw-semi-bold lh-h2">Airport taxis for any kind of trip</div>
-                    <div class="mt-md mb-lg">
-                        <ul class="number-passenger">
-                            <li class="сhoose-number-passenger active">1 - 3 passengers</li>
-                            <li class="сhoose-number-passenger">4 - 7 passengers</li>
-                            <li class="сhoose-number-passenger">All taxis</li>
-                        </ul>
-                    </div>
+
+
+                    <div class="d-flex justify-content-center h4">Airport taxis for any kind of trip</div>
+                        <div class="mt-md mb-lg">
+                            <ul class="d-flex fs-body1 number-passenger">
+                                <li class="choose-number-passanger lh-subtitle1 py-sm px-md active">1 - 3 passengers</li>
+                                <li class="сhoose-number-passenger lh-subtitle1 py-sm px-md">4 - 7 passengers</li>
+                                <li class="сhoose-number-passenger lh-subtitle1 py-sm px-md">All taxis</li>
+                            </ul>
+                        </div>
 
                     <div class="row">
                         <div class="col-6">
-                            <div class="card-taxis mr-md">
+                            <div class="p-md bg-color-white mr-md border-gray-lighten8">
                                 <div class="mb-md">
-                                    <div class="card-taxis-header">Standard</div>
-                                    <div class="color-gray-darken5 fs-body1 lh-subtitle1">Volkswagen Jetta or similar</div>
+                                    <div class="subtitle2 lh-h6 fw-bold">Standard</div>
+                                    <div class="body1 lh-subtitle1 color-gray-lighten2">Volkswagen Jetta or similar</div>
                                 </div>
+                                <div class="pl-sm">
+                                    <div class="card-taxis-items lh-h6">
+                                        <i class="fas fa-user-alt mr-sm"></i>3 passengers
+                                    </div>
 
-                                <div class="card-taxis-items">
-                                    <i class="fas fa-user-alt"></i>3 passengers
+                                    <div class="card-taxis-items lh-h6">
+                                        <i class="fas fa-briefcase mr-sm"></i>2 standard bags
+                                    </div>
+
+                                    <div class="card-taxis-items color-secondary-default lh-h6">
+                                        <i class="fas fa-check-circle mr-sm"></i>Meet & Greet included
+                                    </div>
+
+                                    <div class="card-taxis-items color-success-darken1 lh-h6">
+                                        <i class="fas fa-check mr-sm"></i>Free cancellation
+                                    </div>
+                                    <button name="primary-search" type="button" class="btn btn-primary btn-sm btn-rounded-noborder-sm btn-primary-hover px-md mt-xs ml-none mt-md">Search</button>
                                 </div>
-
-                                <div class="card-taxis-items">
-                                    <i class="fas fa-briefcase"></i>2 standard bags
-                                </div>
-
-                                <div class="card-taxis-items color-secondary-default">
-                                    <i class="fas fa-check-circle"></i>Meet & Greet included
-                                </div>
-
-                                <div class="card-taxis-items color-success-darken1">
-                                    <i class="fas fa-check"></i>Free cancellation
-                                </div>
-                                <button name="primary-search" type="button" class="btn btn-primary btn-sm btn-rounded-noborder-sm btn-primary-hover px-md mt-xs ml-xs mt-md">Search</button>
-
                             </div>
                         </div>
 
                         <div class="col-6">
-                            <div class="card-taxis mr-md">
+                            <div class="p-md bg-color-white mr-md border-gray-lighten8">
                                 <div class="mb-md">
-                                    <div class="card-taxis-header">Full-size sedan</div>
-                                    <div class="color-gray-darken5 fs-body1 lh-subtitle1">Mercedes-Benz E-Class or similar</div>
+                                    <div class="subtitle2 lh-h6 fw-bold">Full-size sedan</div>
+                                    <div class="body1 lh-subtitle1 color-gray-lighten2">Mercedes-Benz E-Class or similar</div>
                                 </div>
 
-                                <div class="card-taxis-items">
-                                    <i class="fas fa-user-alt"></i>3 passengers
-                                </div>
+                                <div class="pl-sm">
+                                    <div class="card-taxis-items lh-h6">
+                                        <i class="fas fa-user-alt mr-sm"></i>3 passengers
+                                    </div>
 
-                                <div class="card-taxis-items">
-                                    <i class="fas fa-briefcase"></i>2 standard bags
-                                </div>
+                                    <div class="card-taxis-items lh-h6">
+                                        <i class="fas fa-briefcase mr-sm"></i>2 standard bags
+                                    </div>
 
-                                <div class="card-taxis-items color-secondary-default">
-                                    <i class="fas fa-check-circle"></i>Meet & Greet included
-                                </div>
+                                    <div class="card-taxis-items color-secondary-default lh-h6">
+                                        <i class="fas fa-check-circle mr-sm"></i>Meet & Greet included
+                                    </div>
 
-                                <div class="card-taxis-items color-success-darken1">
-                                    <i class="fas fa-check"></i>Free cancellation
+                                    <div class="card-taxis-items color-success-darken1 lh-h6">
+                                        <i class="fas fa-check mr-sm"></i>Free cancellation
+                                    </div>
+                                    <button name="primary-search" type="button" class="btn btn-primary btn-sm btn-rounded-noborder-sm btn-primary-hover px-md mt-xs ml-none mt-md">Search</button>
                                 </div>
-                                <button name="primary-search" type="button" class="btn btn-primary btn-sm btn-rounded-noborder-sm btn-primary-hover px-md mt-xs ml-xs mt-md">Search</button>
-
                             </div>
                         </div>
 
@@ -253,7 +261,7 @@
             <!--    /// Airport taxis for any kind of trip -->
 
 <!--     FAQ       -->
-            <div>
+            <div class="">
                 <div class="container-xl">
                     <div class="row my-xl faq-block">
                         <div class="col faq-title">
