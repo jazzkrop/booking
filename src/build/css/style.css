@@ -254,10 +254,14 @@ a {
 .bg-color-warning-lighten1 {
     background-color: var(--color-warning-lighten1);
 }
+.bg-color-danger-lighten2{
+    background-color: var(--color-danger-lighten2);
+}
 
 .bg-color-success {
     background-color: var(--color-success-default);
 }
+
 
 .bg-color-gray {
     background-color: var(--color-gray-default);
