@@ -4,96 +4,70 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="../styles/components/index.scss" /> -->
-    <link rel="stylesheet" href="../styles/config/index.scss" />
-    <link rel="stylesheet" href="../styles/helpers/index.scss" />
     <link
       rel="stylesheet"
       href="../../node_modules/bootstrap/dist/css/bootstrap-grid.css"
     />
     <link
       rel="stylesheet"
-      href="../../node_modules/bootstrap/dist/css/bootstrap.css"
+      href="../../node_modules/bootstrap/dist/css/bootstrap-utilities.css"
     />
+    <link rel="stylesheet" href="../build/css/style.css" />
+    <link rel="stylesheet" href="../styles/pages/search/search.css" />
     <title>Document</title>
   </head>
   <body>
     <main>
       <div class="container-xl">
-        <nav class="breadcrumb fs-body2">
-          <ol class="breadcrumb-list lh-subtitle2">
-            <li class="breadcrumb-item lh-subtitle2">
-              <div class="breadcrumb-text color-secondary-default">
-                <a class="color-secondary-default" href="">Home</a>
-              </div>
-              <svg
-                class="breadcrumb-icon"
-                viewBox="0 0 128 128"
-                role="presentation"
-              >
-                <path
-                  d="M54.3 96a4 4 0 0 1-2.8-6.8L76.7 64 51.5 38.8a4 4 0 0 1 5.7-5.6L88 64 57.2 94.8a4 4 0 0 1-2.9 1.2z"
-                ></path>
-              </svg>
-            </li>
-            <li class="breadcrumb-item lh-subtitle2">
-              <div class="breadcrumb-text">
-                <a class="color-secondary-default" href=""
-                  >Unites States of America</a
-                >
-              </div>
-              <svg
-                class="breadcrumb-icon"
-                viewBox="0 0 128 128"
-                role="presentation"
-              >
-                <path
-                  d="M54.3 96a4 4 0 0 1-2.8-6.8L76.7 64 51.5 38.8a4 4 0 0 1 5.7-5.6L88 64 57.2 94.8a4 4 0 0 1-2.9 1.2z"
-                ></path>
-              </svg>
-            </li>
-            <li class="breadcrumb-item lh-subtitle2">
-              <div class="breadcrumb-text">
-                <a class="color-secondary-default" href=""
-                  >District of Columbia</a
-                >
-              </div>
-              <svg
-                class="breadcrumb-icon"
-                viewBox="0 0 128 128"
-                role="presentation"
-              >
-                <path
-                  d="M54.3 96a4 4 0 0 1-2.8-6.8L76.7 64 51.5 38.8a4 4 0 0 1 5.7-5.6L88 64 57.2 94.8a4 4 0 0 1-2.9 1.2z"
-                ></path>
-              </svg>
-            </li>
-            <li class="breadcrumb-item lh-subtitle2">
-              <div class="breadcrumb-text">
-                <a class="color-secondary-default" href="">Washington, D.C.</a>
-              </div>
-              <svg
-                class="breadcrumb-icon"
-                viewBox="0 0 128 128"
-                role="presentation"
-              >
-                <path
-                  d="M54.3 96a4 4 0 0 1-2.8-6.8L76.7 64 51.5 38.8a4 4 0 0 1 5.7-5.6L88 64 57.2 94.8a4 4 0 0 1-2.9 1.2z"
-                ></path>
-              </svg>
-            </li>
-            <li class="breadcrumb-item lh-subtitle2">
-              <div class="breadcrumb-text">
-                <a href="">Search result</a>
-              </div>
-            </li>
-          </ol>
+        <nav class="breadcrumbs body2">
+          <a href="" class="breadcrumb-item">Home</a>
+          <svg
+            class="breadcrumb-separator"
+            viewBox="0 0 128 128"
+            role="presentation"
+          >
+            <path
+              d="M54.3 96a4 4 0 0 1-2.8-6.8L76.7 64 51.5 38.8a4 4 0 0 1 5.7-5.6L88 64 57.2 94.8a4 4 0 0 1-2.9 1.2z"
+            ></path>
+          </svg>
+          <a href="" class="breadcrumb-item">United States of America</a
+          ><svg
+            class="breadcrumb-separator"
+            viewBox="0 0 128 128"
+            role="presentation"
+          >
+            <path
+              d="M54.3 96a4 4 0 0 1-2.8-6.8L76.7 64 51.5 38.8a4 4 0 0 1 5.7-5.6L88 64 57.2 94.8a4 4 0 0 1-2.9 1.2z"
+            ></path>
+          </svg>
+          <a href="" class="breadcrumb-item">District of Columbia</a>
+          <svg
+            class="breadcrumb-separator"
+            viewBox="0 0 128 128"
+            role="presentation"
+          >
+            <path
+              d="M54.3 96a4 4 0 0 1-2.8-6.8L76.7 64 51.5 38.8a4 4 0 0 1 5.7-5.6L88 64 57.2 94.8a4 4 0 0 1-2.9 1.2z"
+            ></path></svg
+          ><a href="" class="breadcrumb-item">Washington, D.C.</a
+          ><svg
+            class="breadcrumb-separator"
+            viewBox="0 0 128 128"
+            role="presentation"
+          >
+            <path
+              d="M54.3 96a4 4 0 0 1-2.8-6.8L76.7 64 51.5 38.8a4 4 0 0 1 5.7-5.6L88 64 57.2 94.8a4 4 0 0 1-2.9 1.2z"
+            ></path>
+          </svg>
+          <a href="" class="breadcrumb-item breadcrumb-item-inactive"
+            >Search-result</a
+          >
         </nav>
-        <div class="row rows-wrapper">
-          <div class="col-4 side-bar">
-            <section class="searchbox br-3 p-md">
+        <div class="row rows-wrapper mt-md">
+          <div class="col-3">
+            <section class="card card-warning">
               <form action="" method="GET">
-                <h2 class="searchbox-title">
+                <h2 class="h6">
                   <span class="searchbox-title-text lh-h3 fw-semi-bold"
                     >Search</span
                   >
@@ -103,51 +77,32 @@
                     >Destination/property name:</label
                   >
                   <input
-                    class="
-                      br-4
-                      bc-white
-                      bs-solid
-                      lh-h5
-                      ff-default
-                      pt-xs
-                      pr-xs
-                      pb-xs
-                      pl-lg
-                      input-img-search input-none
-                    "
+                    class="input-xl input-img-search-xxl"
                     type="text"
-                    id="input-destination"
-                    value="Washington DC Metropolitan area"
-                    placeholder="City"
+                    placeholder="Washington, D.C."
                   />
                 </div>
                 <div class="searchbox-row">
                   <label for="date-in-checker" class="caption fw-normal"
                     >Check-in Date:</label
                   >
-                  <div class="date-checker">
-                    <input
-                      type="text"
-                      class="date-field input-calendar1-xxl"
-                      placeholder="Saturday, July 31, 2021"
-                      id="date-in-checker"
-                    />
-                  </div>
+                  <input
+                    type="text"
+                    class="input-xl input-calendar-empty-xxl"
+                    placeholder="Thursday, July 29, 2021"
+                  />
                 </div>
                 <div class="searchbox-row">
                   <label for="date-out-checker" class="caption fw-normal"
                     >Check-out Date:</label
                   >
-                  <div class="date-checker">
-                    <input
-                      type="text"
-                      class="date-field input-calendar1-xxl"
-                      placeholder="Saturday, July 31, 2021"
-                      id="date-out-checker"
-                    />
-                  </div>
+                  <input
+                    type="text"
+                    class="input-xl input-calendar-empty-xxl"
+                    placeholder="Thursday, July 29, 2021"
+                  />
                 </div>
-                <div class="searchbox-row">
+                <div class="col-12 mb-xxs mt-sm">
                   <select
                     class="
                       select_lg
@@ -160,11 +115,10 @@
                       box-shadow-white-f
                       select-appearance select-img-arrow
                       p-sm
-                      pt-xs
-                      pb-xs
-                      pl-xs
-                      pr-lg
-                      mt-md
+                      pt-sm
+                      pr-md
+                      pb-sm
+                      pl-sm
                     "
                   >
                     <option value="1 adult">1 adults</option>
@@ -173,227 +127,143 @@
                     <option value="4 adults">4 adults</option>
                   </select>
                 </div>
-                <div class="row">
-                  <div class="col-6 mr-xxs">
-                    <div class="searchbox-row">
-                      <select
-                        class="
-                          select_lg
-                          cursor-pointer
-                          lh-subtitle1
-                          br-3
-                          bs-solid
-                          bw-2
-                          bc-white
-                          box-shadow-white-f
-                          select-appearance select-img-arrow
-                          pt-xs
-                          pb-xs
-                          pl-xs
-                          pr-lg
-                          mt-md
-                        "
-                      >
-                        <option selected value="1 adult">No childrens</option>
-                        <option value="2 adults">1 children</option>
-                        <option value="3 adults">2 childrens</option>
-                        <option value="4 adults">3 childrens</option>
-                      </select>
-                    </div>
+                <div class="row rows-wrapper">
+                  <div class="col-6 mr-none pr-none py-none">
+                    <select
+                      class="
+                        select_lg
+                        cursor-pointer
+                        lh-subtitle1
+                        br-3
+                        bs-solid
+                        bw-2
+                        bc-white
+                        box-shadow-white-f
+                        select-appearance select-img-arrow
+                        pt-sm
+                        pr-md
+                        pb-sm
+                        pl-sm
+                      "
+                    >
+                      <option selected value="1 adult">No childrens</option>
+                      <option value="2 adults">1 children</option>
+                      <option value="3 adults">2 childrens</option>
+                      <option value="4 adults">3 childrens</option>
+                    </select>
                   </div>
-                  <div class="col-6">
-                    <div class="searchbox-row">
-                      <select
-                        class="
-                          select_lg
-                          cursor-pointer
-                          lh-subtitle1
-                          br-3
-                          bs-solid
-                          bw-2
-                          bc-white
-                          box-shadow-white-f
-                          select-appearance select-img-arrow
-                          pt-xs
-                          pb-xs
-                          pl-xs
-                          pr-lg
-                          mt-md
-                        "
-                      >
-                        <option selected value="1 adult">1 room</option>
-                        <option value="2 adults">2 room</option>
-                        <option value="3 adults">3 room</option>
-                        <option value="4 adults">4 room</option>
-                      </select>
-                    </div>
+                  <div class="col-6 ml-xxs py-none pl-none">
+                    <select
+                      class="
+                        select_lg
+                        cursor-pointer
+                        lh-subtitle1
+                        br-3
+                        bs-solid
+                        bw-2
+                        bc-white
+                        box-shadow-white-f
+                        select-appearance select-img-arrow
+                        pt-sm
+                        pr-md
+                        pb-sm
+                        pl-sm
+                      "
+                    >
+                      <option selected value="1 adult">1 room</option>
+                      <option value="2 adults">2 room</option>
+                      <option value="3 adults">3 room</option>
+                      <option value="4 adults">4 room</option>
+                    </select>
                   </div>
                 </div>
-                <div class="traveling-row mt-sm">
-                  <div class="traveling-for-work-input">
-                    <input type="checkbox" name="work-checkbox" id="" />
-                    <label class="fs-body2" for="work-checkbox"
+                <div class="row mt-sm">
+                  <div
+                    class="
+                      col-10
+                      d-flex
+                      justify-content-start
+                      align-items-center
+                    "
+                  >
+                    <input
+                      class="work-checkbox"
+                      type="checkbox"
+                      name="work-checkbox"
+                      id="work-checkbox"
+                    />
+                    <label class="caption" for="work-checkbox"
                       >I`m travelling for work</label
                     >
                   </div>
-                  <div class="help-svg-block">
-                    <svg viewBox="0 0 24 24">
+                  <div class="col-2">
+                    <svg viewBox="0 0 24 24" width="16px" height="16px">
                       <path
                         d="M9.75 9a2.25 2.25 0 1 1 3 2.122 2.25 2.25 0 0 0-1.5 2.122v1.006a.75.75 0 0 0 1.5 0v-1.006c0-.318.2-.602.5-.708A3.75 3.75 0 1 0 8.25 9a.75.75 0 1 0 1.5 0zM12 16.5a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25.75.75 0 0 0 0 1.5.375.375 0 1 1 0-.75.375.375 0 0 1 0 .75.75.75 0 0 0 0-1.5zM22.5 12c0 5.799-4.701 10.5-10.5 10.5S1.5 17.799 1.5 12 6.201 1.5 12 1.5 22.5 6.201 22.5 12zm1.5 0c0-6.627-5.373-12-12-12S0 5.373 0 12s5.373 12 12 12 12-5.373 12-12z"
                       ></path>
                     </svg>
                   </div>
                 </div>
-                <div class="searchbox-row">
-                  <button
-                    name="primary-search"
-                    type="button"
-                    class="
-                      btn btn-primary btn-xxl btn-primary-hover
-                      fs-subtitle1
-                      lh-h6
-                      p-paired-sm
-                    "
-                  >
-                    Search
-                  </button>
+                <div class="row">
+                  <div class="col-12">
+                    <button
+                      name="primary-search"
+                      type="button"
+                      class="
+                        btn btn-primary btn-xxl btn-primary-hover
+                        fs-subtitle1
+                        lh-h6
+                        p-paired-sm
+                      "
+                    >
+                      Search
+                    </button>
+                  </div>
                 </div>
               </form>
             </section>
-            <section class="filter-box mt-sm">
-              <div class="filter-part pl-md pr-md pt-sm pb-sm">
-                <span class="filter-title fs-subtitle2 lh-h6">Filter by:</span>
-              </div>
-              <div class="filter-part pl-md pr-md pt-sm pb-sm">
-                <span class="filter-part-title lh-subtitle1">
-                  Health & safety</span
-                >
-                <div class="filter-item">
-                  <div class="checkbox-container">
-                    <input type="checkbox" name="filter-item" id="" />
-                    <label class="pl-sm pt-sm" for="filter-item"
-                      >Properties with additional health & safety
-                      measures</label
-                    >
-                  </div>
-                  <div class="filter-value">
-                    <span class="fs-body2 color-gray-darken6">192</span>
-                  </div>
-                </div>
-              </div>
-              <div class="filter-part pl-md pr-md pt-sm pb-sm">
-                <span class="filter-part-title lh-subtitle1 mb-sm">
-                  Popular filters</span
-                >
-                <div class="filter-item mt-sm">
-                  <div class="checkbox-container">
-                    <input type="checkbox" name="filter-item" id="" />
-                    <label class="pl-sm" for="filter-item">5 Stars</label>
-                  </div>
-                  <div class="filter-value">
-                    <span class="fs-body2 color-gray-darken6">192</span>
-                  </div>
-                </div>
-                <div class="filter-item mt-sm">
-                  <div class="checkbox-container">
-                    <input type="checkbox" name="filter-item" id="" />
-                    <label class="pl-sm" for="filter-item">Hotels</label>
-                  </div>
-                  <div class="filter-value">
-                    <span class="fs-body2 color-gray-darken6">35</span>
-                  </div>
-                </div>
-                <div class="filter-item mt-sm">
-                  <div class="checkbox-container">
-                    <input type="checkbox" name="filter-item" id="" />
-                    <label class="pl-sm" for="filter-item">Indoor pool</label>
-                  </div>
-                  <div class="filter-value">
-                    <span class="fs-body2 color-gray-darken6">64</span>
-                  </div>
-                </div>
-                <div class="filter-item mt-sm">
-                  <div class="checkbox-container">
-                    <input type="checkbox" name="filter-item" id="" />
-                    <label class="pl-sm" for="filter-item">Spa</label>
-                  </div>
-                  <div class="filter-value">
-                    <span class="fs-body2 color-gray-darken6">54</span>
-                  </div>
-                </div>
-                <div class="filter-item mt-sm">
-                  <div class="checkbox-container">
-                    <input type="checkbox" name="filter-item" id="" />
-                    <label class="pl-sm" for="filter-item"
-                      >The White House</label
-                    >
-                  </div>
-                  <div class="filter-value">
-                    <span class="fs-body2 color-gray-darken6">23</span>
-                  </div>
-                </div>
-                <div class="filter-item mt-sm">
-                  <div class="checkbox-container">
-                    <input type="checkbox" name="filter-item" id="" />
-                    <label class="pl-sm" for="filter-item">Playground</label>
-                  </div>
-                  <div class="filter-value">
-                    <span class="fs-body2 color-gray-darken6">64</span>
-                  </div>
-                </div>
-                <div class="filter-item mt-sm">
-                  <div class="checkbox-container">
-                    <input type="checkbox" name="filter-item" id="" />
-                    <label class="pl-sm" for="filter-item">Wonderful: 9+</label>
-                  </div>
-                  <div class="filter-value">
-                    <span class="fs-body2 color-gray-darken6">64</span>
-                  </div>
-                </div>
-              </div>
-            </section>
           </div>
-          <div class="col-8-lg ml-md items-part">
-            <div class="title justify-content-between">
-              <p class="fs-h4 lh-h2 fw-bold">
+          <div class="col-9-lg items-part">
+            <div class="title d-flex justify-content-between">
+              <h2 class="h2 h2-black-bold">
                 Washington, D.C.: 289 properties found
-              </p>
+              </h2>
               <img
                 class="show-on-map-image align-self-baseline"
                 src="../images/search-page/show-on-map.png"
                 alt="Show on Google map"
               />
             </div>
-            <div class="sort-bar mt-sm">
+            <div class="col-12 d-flex">
               <div
                 class="
-                  sort-item
-                  bg-color-secondary-default
-                  pt-paired-xs
-                  pb-paired-xs
+                  bg-color-secondary
+                  fc-white
+                  col
+                  btn-nav btn-nav-left-border
                 "
               >
-                <a class="color-white-default fs-body1 lh-subtitle1" href=""
+                <a class="color-white-default text-center" href=""
                   >Our Top Picks</a
                 >
               </div>
-              <div class="sort-item not-active-item">
-                <a class="color-secondary-default fs-body1 lh-subtitle1" href=""
+              <div class="col btn-nav btn-nav-left-border">
+                <a class="color-secondary-default text-center" href=""
                   >Entire homes & apartments</a
                 >
               </div>
-              <div class="sort-item not-active-item">
-                <a class="color-secondary-default fs-body1 lh-subtitle1" href=""
+              <div class="col btn-nav btn-nav-left-border">
+                <a class="color-secondary-default text-center" href=""
                   >Stars (highest first)</a
                 >
               </div>
-              <div class="sort-item not-active-item">
-                <a class="color-secondary-default fs-body1 lh-subtitle1" href=""
+              <div class="col btn-nav btn-nav-left-border">
+                <a class="color-secondary-default text-center" href=""
                   >Stars (lowest first)</a
                 >
               </div>
-              <div class="sort-item not-active-item">
-                <a class="color-secondary-default fs-body1 lh-subtitle1" href=""
+              <div class="col btn-nav btn-nav-left-border">
+                <a class="color-secondary-default text-center" href=""
                   >Top Reviewed</a
                 >
               </div>
