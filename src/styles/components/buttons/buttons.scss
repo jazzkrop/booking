@@ -105,7 +105,7 @@
 		font-size: map-get($font-size, subtitle2);
 	}
 	&-xxl {
-		padding: map-get($spacers, sm) map-get($spacers, md);
+		padding: map-get($spacers, md) map-get($spacers, md);
 		line-height: map-get($line-height, h1);
 		font-size: map-get($font-size, h6);
 		font-weight: map-get($font-weight, medium);
