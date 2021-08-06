@@ -6,6 +6,11 @@
   flex-wrap: nowrap !important;
 }
 
+.container-md {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
 .card-warning {
   padding: 16px;
 }
