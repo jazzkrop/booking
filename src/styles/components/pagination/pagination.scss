@@ -24,7 +24,7 @@
 .pagination-btn {
     display: flex;
     align-items: center;
-    border: 1px solid var(--color-gray-lighten8);
+    border: map-get($border-width, bw-1) $border-style-solid var(--color-gray-lighten8);
     margin: map-get($spacers, sm) 0;
     padding: map-get($spacers, sm);
     border-radius: map-get($border-radius, br-2);
@@ -53,7 +53,7 @@
 .outline-btn-active {
     color: var(--color-gray-lighten1);
     font-family: $ff-default;
-    border: 1px solid var(--color-gray-lighten1);
+    border: map-get($border-width, bw-1) $border-style-solid map-get($border-color, gray-lighten1 );
     background-color: var(--color-white-default);
     padding: map-get($spacers, xxs) map-get($spacers, sm);
     border-radius: map-get($border-radius, br-2);
