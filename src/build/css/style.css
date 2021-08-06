@@ -3588,3 +3588,7 @@ footer #mobile-version {
 
 .bg-color-primary-darken1 {
   background: var(--color-primary-darken1); }
+
+  .img-footer{
+    width: auto;
+  }
