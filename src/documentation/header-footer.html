@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="../../node_modules/bootstrap/dist/css/bootstrap.css"
+      href="../../node_modules/bootstrap/dist/css/bootstrap-grid.css"
     />
-    <link rel="stylesheet" href="../build/css/style.css" />
     <link
       rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
+      href="../styles/config/icons/fontawesome-free-5.15.3-web/css/all.css"
     />
+    <link rel="stylesheet" href="../build/css/style.css" />
     <link
       rel="stylesheet"
       href="../styles/components/header-footer/header-footer.scss"
@@ -21,10 +21,10 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="bg-col-autoor-primary-default">
-      <div class="container-xl">
+    <header class="bg-color-primary">
+      <div class="container-md">
         <div class="row py-sm px-md">
-          <div class="col-auto row align-items-center">
+          <div class="col-auto flex-grow-1 row align-items-center">
             <a href=" ">
               <svg
                 aria-hidden="true"
@@ -46,68 +46,68 @@
               </svg>
             </a>
           </div>
-          <div class="row align-items-center">
-            <button
-              class="btn btn-info btn-xxs bold br-2 mr-xs"
-              name="info"
-              type=" button "
-            >
-              UAH
-            </button>
-            <button
-              class="btn btn-image br-2 mr-xs"
-              name="info"
-              type=" button "
-            >
-              <img
-                alt=""
-                src="https://cf.bstatic.com/static/img/flags/new/48-squared/us/fa2b2a0e643c840152ba856a8bb081c7ded40efa.png"
-                style="height: 24px; width: 24px; border-radius: 50%"
-              />
-            </button>
-            <a class="btn btn-image br-2 mr-xs" href="">
-              <svg
-                aria-hidden="true"
-                focusable="false"
-                height="24"
-                role="presentation"
-                viewBox="0 0 24 24"
-                width="24"
+          <div class="col-auto">
+            <div class="d-flex align-items-center">
+              <button
+                class="btn btn-info btn-xxs bold br-2 mr-xs"
+                name="info"
+                type=" button "
               >
-                <path
-                  d="M9.75 9a2.25 2.25 0 1 1 3 2.122 2.25 2.25 0 0 0-1.5 2.122v1.006a.75.75 0 0 0 1.5 0v-1.006c0-.318.2-.602.5-.708A3.75 3.75 0 1 0 8.25 9a.75.75 0 1 0 1.5 0zM12 16.5a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25.75.75 0 0 0 0 1.5.375.375 0 1 1 0-.75.375.375 0 0 1 0 .75.75.75 0 0 0 0-1.5zM22.5 12c0 5.799-4.701 10.5-10.5 10.5S1.5 17.799 1.5 12 6.201 1.5 12 1.5 22.5 6.201 22.5 12zm1.5 0c0-6.627-5.373-12-12-12S0 5.373 0 12s5.373 12 12 12 12-5.373 12-12z"
-                  fill="white"
-                ></path>
-              </svg>
-            </a>
-            <button
-              class="btn btn-outlined btn-sm mr-xs"
-              name="outlined-big"
-              type="button"
-            >
-              List your property
-            </button>
-            <button
-              class="btn btn-white btn-sm mr-xs"
-              name="white"
-              type="button"
-            >
-              Register
-            </button>
-            <button class="btn btn-white btn-sm" name="white" type="button">
-              Sign In
-            </button>
-            <a class="burger" href="">
-              <i
-                class="far col-autoor-white-default fa-user-circle fs-h5 mr-sm"
-              ></i>
-            </a>
-            <a
-              class="burger col-autoor-white-default fs-h5 display-block"
-              href="#menu-fade"
-            >
-              <i class="fas fa-bars"></i>
-            </a>
+                UAH
+              </button>
+              <button
+                class="btn btn-image br-2 mr-xs"
+                name="info"
+                type=" button "
+              >
+                <img
+                  alt=""
+                  src="https://cf.bstatic.com/static/img/flags/new/48-squared/us/fa2b2a0e643c840152ba856a8bb081c7ded40efa.png"
+                  style="height: 24px; width: 24px; border-radius: 50%"
+                />
+              </button>
+              <a class="btn btn-image br-2 mr-xs" href="">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  height="24"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <path
+                    d="M9.75 9a2.25 2.25 0 1 1 3 2.122 2.25 2.25 0 0 0-1.5 2.122v1.006a.75.75 0 0 0 1.5 0v-1.006c0-.318.2-.602.5-.708A3.75 3.75 0 1 0 8.25 9a.75.75 0 1 0 1.5 0zM12 16.5a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25.75.75 0 0 0 0 1.5.375.375 0 1 1 0-.75.375.375 0 0 1 0 .75.75.75 0 0 0 0-1.5zM22.5 12c0 5.799-4.701 10.5-10.5 10.5S1.5 17.799 1.5 12 6.201 1.5 12 1.5 22.5 6.201 22.5 12zm1.5 0c0-6.627-5.373-12-12-12S0 5.373 0 12s5.373 12 12 12 12-5.373 12-12z"
+                    fill="white"
+                  ></path>
+                </svg>
+              </a>
+              <button
+                class="btn btn-outlined btn-sm mr-xs"
+                name="outlined-big"
+                type="button"
+              >
+                List your property
+              </button>
+              <button
+                class="btn btn-white btn-sm mr-xs"
+                name="white"
+                type="button"
+              >
+                Register
+              </button>
+              <button class="btn btn-white btn-sm" name="white" type="button">
+                Sign In
+              </button>
+              <a class="burger" href="">
+                <i class="far text-color-white fa-user-circle fs-h5 mr-sm"></i>
+              </a>
+              <a
+                class="burger text-color-white fs-h5 display-block"
+                href="#menu-fade"
+              >
+                <i class="fas fa-bars"></i>
+              </a>
+            </div>
           </div>
         </div>
         <nav class="menu">
@@ -200,8 +200,7 @@
 
             <nav class="menu-navigation">
               <a href=""
-                ><span class="col-autoor-gray-darken5">UAH</span> Ukraine
-                Hryvnia</a
+                ><span class="text-color-gray">UAH</span> Ukraine Hryvnia</a
               >
               <a href="">
                 <span
@@ -325,51 +324,48 @@
       <div
         class="
           subscribe
-          ta-center
-          bg-col-autoor-primary-darken1
-          col-autoor-white-default
+          d-flex
+          bg-color-primary-darken1
+          align-items-center
+          flex-column
+          text-color-white
           py-paired-lg
           px-md
         "
       >
         <div class="text">
           <h2 class="m-none fs-h3 fw-light lh-h1">Save time, save money!</h2>
-          <p class="col-autoor-gray-darken3 m-none lh-h4">
+          <p class="color-gray-darken3 m-none lh-h4">
             Sign up and we'll send the best deals to you
           </p>
         </div>
         <form action="#" class="form-mail">
           <input
-            class="br-2 border-none mr-xs flex-grow1"
+            class="br-2 border-none mr-xs flex-grow-1"
             placeholder="Your email"
             type="text"
           />
           <input class="btn btn-primary br-2" type="submit" value="Subscribe" />
           <label class="flex-next-line fs-body1 lh-h3">
-            <input class="display-inline" type="checkbox" />Send me a link to
-            get the FREE Booking.com app!</label
+            <input class="d-inline" type="checkbox" />Send me a link to get the
+            FREE Booking.com app!</label
           >
         </form>
       </div>
-      <div class="menu bg-col-autoor-primary-default">
-        <div class="menu-top bb-1-w-s ta-center" style="padding: 15px 0">
+      <div class="menu bg-color-primary">
+        <div
+          class="menu-top bb-1-w-s d-flex justify-content-center"
+          style="padding: 15px 0"
+        >
           <button
-            class="
-              btn btn-outlined
-              fs-caption1
-              btn-outlined-hover
-              p-xs
-              pr-md
-              pl-md
-              br-3
-              display-inline
-            "
+            class="btn btn-outlined btn-sm mr-xs"
+            name="outlined-big"
             type="button"
           >
             List your property
           </button>
         </div>
-        <div class="container-xl">
+        <div class="container-md">
           <nav class="footer-menu">
             <a href="">Mobile version</a>
             <a href="">Your account</a>
@@ -380,9 +376,9 @@
           </nav>
         </div>
       </div>
-      <div class="container-xl">
+      <div class="container-md">
         <nav class="row usefull-links">
-          <div class="col-auto">
+          <div class="col-auto flex-grow-1">
             <a href="">Countries</a>
             <a href="">Regions</a>
             <a href="">Cities</a>
@@ -391,7 +387,7 @@
             <a href="">Hotels</a>
             <a href="">Places of interest</a>
           </div>
-          <div class="col-auto">
+          <div class="col-auto flex-grow-1">
             <a href="">Homes</a>
             <a href="">Apartments</a>
             <a href="">Resorts</a>
@@ -400,20 +396,20 @@
             <a href="">B&Bs</a>
             <a href="">Guest houses</a>
           </div>
-          <div class="col-auto">
+          <div class="col-auto flex-grow-1">
             <a href="">Unique places to stay</a>
             <a href="">All destinations</a>
             <a href="">Reviews</a>
             <a href="">Unpacked: Travel articles</a>
             <a href="">Travel communities</a>
           </div>
-          <div class="col-auto">
+          <div class="col-auto flex-grow-1">
             <a href="">Car rental</a>
             <a href="">Flight finder</a>
             <a href="">Restaurant reservations</a>
             <a href="">Booking.com for Travel Agents</a>
           </div>
-          <div class="col-auto">
+          <div class="col-auto flex-grow-1">
             <a href="">Coronavirus (COVID-19) FAQs</a>
             <a href="">About Booking.com</a>
             <a href="">Contact Customer Service</a>
@@ -431,25 +427,28 @@
           </div>
         </nav>
       </div>
-      <div class="login ta-center mt-lg">
+      <div class="login text-center mt-lg">
         <a
           class="
-            col-autoor-gray-darken5
+            text-color-gray
             fw-bold
             fs-subtitle2
             td-none
-            hover-warning-col-autoor
+            hover-warning-color
+            d-flex
+            justify-content-center
+            mb-md
           "
           href=""
           >Extranet Login</a
         >
       </div>
       <div class="copyright fs-body2">
-        <div class="container-xl p-md">
-          <p class="">
+        <div class="container-md mb-md">
+          <p class="mb-md">
             Copyright © 1996–2021 Booking.com™. All rights reserved.
           </p>
-          <p class="ta-center col-autoor-gray-darken6">
+          <p class="d-flex justify-content-center text-color-gray-lighten1">
             Booking.com is part of Booking Holdings Inc., the world leader in
             online travel and related services.
           </p>
@@ -466,10 +465,10 @@
           src=" ../images/partners/6.png"
         />
       </div>
-      <div class="bg-col-autoor-primary-default ta-center" id="mobile-version">
+      <div class="bg-color-primary text-center" id="mobile-version">
         <div class="bb-2-w-s p-md">
           <button
-            class="btn btn-white btn-sm fw-light br-none display-inline"
+            class="btn btn-white btn-sm fw-light br-none d-inline"
             name="white"
             type="button"
           >
@@ -483,15 +482,13 @@
             <a href="">Privacy & Cookies</a>
             <a href="">About Booking.com</a>
           </nav>
-          <div class="col-autoor-white-default fs-body1 mt-md">
+          <div class="text-color-white fs-body1 mt-md">
             Copyright © 1996–2021 Booking.com™. All rights reserved.
           </div>
-          <div class="col-autoor-white-default fs-body1 mt-md">
+          <div class="text-color-white fs-body1 mt-md">
             Your Reference ID is: <span class="fw-bold">E59C7D6</span>
           </div>
-          <a
-            class="fs-body1 col-autoor-white-default mt-md display-block"
-            href=""
+          <a class="fs-body1 text-color-white mt-md display-block" href=""
             >Sitemap</a
           >
         </div>

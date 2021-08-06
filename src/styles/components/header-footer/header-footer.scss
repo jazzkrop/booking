@@ -1,3 +1,7 @@
+html {
+  overflow: hidden;
+  width: 100%;
+}
 .bb-2-w-s {
   -webkit-box-shadow: inset 0px -9px 0px -6px #ffffff;
   box-shadow: inset 0px -9px 0px -6px #ffffff;
@@ -163,7 +167,7 @@ header {
       box-sizing: border-box;
       font-size: 14px;
       text-decoration: none;
-      color: var(--color-gray-lighten8);
+      color: var(--color-gray);
       line-height: 24px;
 
       &:active {
@@ -219,16 +223,6 @@ footer {
     }
   }
 
-  & .footer-menu {
-    & a {
-      padding: 16px;
-      color: var(--color-white-default);
-      display: inline-block;
-      font-size: 12px;
-      font-weight: bold;
-    }
-  }
-
   & .usefull-links {
     padding: 16px 0;
 
@@ -265,12 +259,11 @@ footer {
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   header {
     & .menu {
       white-space: nowrap;
-      overflow-x: scroll;
-      overflow-y: hidden;
+      overflow-y: scroll;
     }
 
     & .btn {
@@ -292,4 +285,10 @@ footer {
       display: block;
     }
   }
+}
+.color-gray-darken6 {
+  color: var(--color-gray-darken6);
+}
+.bg-color-primary-darken1 {
+  background: var(--color-primary-darken1);
 }
