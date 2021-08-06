@@ -69,8 +69,8 @@
 		background-color: var(--color-transparent);
 		color: var(--color-white-default);
 		border: none;
-		padding: map-get($button-padding, btn-padding-lg);
-		line-height: map-get($button-line-heights, btn-lh-none);
+		padding: map-get($spacers, paired-sm);
+		line-height: map-get($line-height, none);
 		&:hover {
 			background-color: var(--color-secondary-darken2);
 		}
@@ -100,59 +100,54 @@
 	&-carousel {
 		background-color: var(--color-white-default);
 		border-radius: map-get($border-radius, br-circle);
-		padding: map-get($button-padding, btn-padding-xs);
-		line-height: map-get($button-line-heights, btn-lh-xxs);
-		font-size: map-get($button-font-size, btn-fs-md);
+		padding: map-get($spacers, xs);
+		line-height: map-get($line-height, caption);
+		font-size: map-get($font-size, subtitle2);
 	}
 	&-xxl {
-		padding: map-get($button-padding, btn-padding-md)
-			map-get($button-padding, btn-padding-xl);
-		line-height: map-get($button-line-heights, btn-lh-lg);
-		font-size: map-get($button-font-size, btn-fs-lg);
-		font-weight: map-get($buttons-font-weight, btn-fw-lg);
+		padding: map-get($spacers, sm) map-get($spacers, md);
+		line-height: map-get($line-height, h1);
+		font-size: map-get($font-size, h6);
+		font-weight: map-get($font-weight, medium);
 	}
 	&-xl {
-		padding-top: map-get($button-padding, btn-padding-sm);
-		padding-bottom: map-get($button-padding, btn-padding-sm);
-		padding-right: map-get($button-padding, btn-padding-xl);
-		padding-left: map-get($button-padding, btn-padding-xl);
-		line-height: map-get($button-line-heights, btn-lh-lg);
-		font-size: map-get($button-font-size, btn-fs-lg);
-		font-weight: map-get($buttons-font-weight, btn-fw-md);
+		padding-top: map-get($spacers, paired-xs);
+		padding-bottom: map-get($spacers, paired-xs);
+		padding-right: map-get($spacers, md);
+		padding-left: map-get($spacers, md);
+		line-height: map-get($line-height, h1);
+		font-size: map-get($font-size, h6);
+		font-weight: map-get($font-weight, normal);
 	}
 	&-lg {
-		padding: map-get($button-padding, btn-padding-md)
-			map-get($button-padding, btn-padding-xl);
-		line-height: map-get($button-line-heights, btn-lh-md);
-		font-size: map-get($button-font-size, btn-fs-lg);
-		font-weight: map-get($buttons-font-weight, btn-fw-sm);
+		padding: map-get($spacers, sm) map-get($spacers, md);
+		line-height: map-get($line-height, h2);
+		font-size: map-get($font-size, h6);
+		font-weight: map-get($font-weight, light);
 	}
 	&-md {
-		padding: map-get($button-padding, btn-padding-md)
-			map-get($button-padding, btn-padding-xl);
-		line-height: map-get($button-line-heights, btn-lh-xs);
-		font-size: map-get($button-font-size, btn-fs-lg);
-		font-weight: map-get($buttons-font-weight, btn-fw-lg);
+		padding: map-get($spacers, sm) map-get($spacers, sm);
+		line-height: map-get($line-height, h6);
+		font-size: map-get($font-size, h6);
+		font-weight: map-get($font-weight, medium);
 	}
 	&-sm {
-		padding: map-get($button-padding, btn-padding-md)
-			map-get($button-padding, btn-padding-xl);
-		line-height: map-get($button-line-heights, btn-lh-xs);
-		font-size: map-get($button-font-size, btn-fs-sm);
-		font-weight: map-get($buttons-font-weight, btn-fw-lg);
+		padding: map-get($spacers, sm) map-get($spacers, sm);
+		line-height: map-get($line-height, subtitle1);
+		font-size: map-get($font-size, body1);
+		font-weight: map-get($font-weight, medium);
 	}
 	&-xs {
-		padding: map-get($button-padding, btn-padding-md)
-			map-get($button-padding, btn-padding-xl);
-		line-height: map-get($button-line-heights, btn-lh-xs);
-		font-size: map-get($button-font-size, btn-fs-sm);
-		font-weight: map-get($buttons-font-weight, btn-fw-lg);
+		padding: map-get($spacers, sm) map-get($spacers, sm);
+		line-height: map-get($line-height, subtitle1);
+		font-size: map-get($font-size, body1);
+		font-weight: map-get($font-weight, medium);
 	}
 	&-xxs {
-		padding: map-get($button-padding, btn-padding-md);
-		line-height: map-get($button-line-heights, btn-lh-md);
-		font-size: map-get($button-font-size, btn-fs-md);
-		font-weight: map-get($buttons-font-weight, btn-fw-sm);
+		padding: map-get($spacers, sm);
+		line-height: map-get($line-height, h2);
+		font-size: map-get($font-size, subtitle2);
+		font-weight: map-get($font-weight, light);
 	}
 	&-circle {
 		border-radius: map-get($border-radius, br-circle);

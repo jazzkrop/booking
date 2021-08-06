@@ -26,7 +26,7 @@
 
 //.b-each - top, bottom, right and left borders are solid
 .bp-each{
-  border-style: solid;
+  border: 1px solid map-get($border-color,black);
 } 
    
 .border-none{
