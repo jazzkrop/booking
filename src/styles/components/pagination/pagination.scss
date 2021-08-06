@@ -1,8 +1,6 @@
-@import "../../helpers/index.scss";
 
-
-
-.page-btn {
+// 1 pagination
+.inline-btn {
         background-color: var(--color-gray-lighten3);
         border: none;
         cursor: pointer;
@@ -15,21 +13,81 @@
                 background-color: var(--color-secondary-default);
         }
 }
-.page-btn-active {
+.inline-btn-active {
     background-color: var(--color-secondary-default);
 }
 
-.other-page {
-    background: none;
-    border: none;
-    cursor: pointer;
-    line-height: map-get($line-height, subtitle1);
+
+// 2 pagination
+.pagination-btn {
+    display: flex;
+    align-items: center;
+    border: map-get($border-width, bw-1) $border-style-solid var(--color-gray-lighten8);
+    margin: map-get($spacers, sm) 0;
+    padding: map-get($spacers, sm);
+    border-radius: map-get($border-radius, br-2);
     font-size: map-get($font-size, body1);
-    font-family: $ff-default;
-    color: map-get($text-color, secondary);
     font-weight: map-get($font-weight, normal);
-    &:hover {
-        color: var(--color-brown-default);
-    }
+    line-height: map-get($line-height, subtitle1);
 }
 
+.outline-btn {
+    color: var(--color-secondary-default);;
+    font-family: $ff-default;
+    border: none;
+    background-color: var(--color-white-default);
+    padding: map-get($spacers, xxs) map-get($spacers, sm);
+    border-radius: map-get($border-radius, br-2);
+    margin: 0 map-get($spacers, xs);
+    font-size: map-get($font-size, body1);
+    font-weight: map-get($font-weight, normal);
+    line-height: map-get($line-height, subtitle1);
+    cursor: pointer;
+    &:hover {
+        background-color: var(--color-secondary-default);
+        color: var(--color-white-default);
+    }
+}
+.outline-btn-active {
+    color: var(--color-gray-lighten1);
+    font-family: $ff-default;
+    border: map-get($border-width, bw-1) $border-style-solid map-get($border-color, gray-lighten1 );
+    background-color: var(--color-white-default);
+    padding: map-get($spacers, xxs) map-get($spacers, sm);
+    border-radius: map-get($border-radius, br-2);
+    margin: 0 map-get($spacers, xs);
+    font-size: map-get($font-size, body1);
+    font-weight: map-get($font-weight, normal);
+    line-height: map-get($line-height, subtitle1);
+    cursor: not-allowed;
+}
+.outline-btn-etc {
+    cursor: pointer;
+    color: var(--color-gray-lighten8);
+    border: none;
+    background-color: var(--color-white-default);
+    padding: map-get($spacers, xxs) map-get($spacers, xxs);
+    margin: 0 map-get($spacers, xxxs);
+    font-size: map-get($font-size, body1);
+    font-weight: map-get($font-weight, normal);
+    line-height: map-get($line-height, subtitle1);
+}
+
+
+.text-pagination {
+    text-align: right;
+    flex-grow: 1;
+    flex-basis: auto;
+    color: var(--color-gray-darken1);
+    font-family: $ff-default;
+    margin-right: map-get($spacers, sm);
+}
+
+
+.bk-icon-right{
+    fill: var(--color-secondary-default);
+}
+
+.outline-btn:hover .bk-icon-right{
+    fill: #fff;
+}

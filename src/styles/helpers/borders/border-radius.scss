@@ -1,4 +1,3 @@
-@import "../../config/index.scss";
 //br maps are in config border-radius
 @each $size_name, $value in $border-radius{
     .br-#{$size_name} { // name - "circle", "xxs", "xs" ... "xxxl"

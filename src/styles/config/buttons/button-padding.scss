@@ -1,9 +1,0 @@
-@import "../offsets/offsets.scss";
-
-$button-padding: (
-  btn-padding-xl: map-get($spacers, md),
-  btn-padding-lg: map-get($spacers, paired-sm),
-  btn-padding-md: map-get($spacers, sm),
-  btn-padding-sm: map-get($spacers, paired-xs),
-  btn-padding-xs: map-get($spacers, xs),
-);
