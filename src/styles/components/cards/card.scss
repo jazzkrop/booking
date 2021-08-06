@@ -1,15 +1,15 @@
 .card {
-    border-radius: map-get($border-radius, br-2);
-    border-width: 0;
+  border-radius: map-get($border-radius, br-2);
+  border-width: 0;
 
-    &-white {
-        background-color: map-get($background-color, white);
-        border-width: 2px;
-    }
+  &-white {
+    background-color: map-get($background-color, white);
+    border-width: 2px;
+  }
 
-    &-warning {
-        background-color: map-get($background-color, warning);
-        border-radius: map-get($border-radius, br-3);
-        border-width: 2px;
-    }
+  &-warning {
+    background-color: map-get($background-color, warning);
+    border-radius: map-get($border-radius, br-3);
+    border-width: 2px;
+  }
 }
