@@ -22,6 +22,11 @@
   width: 100%;
 }
 
+.show-on-map-image {
+  width: 162px;
+  height: 72px;
+}
+
 .btn-nav {
   list-style: none;
 }
@@ -49,7 +54,7 @@
 }
 
 @media screen and (max-width: 1120px) {
-  .col-3 img {
+  .item-image {
     width: 150px;
     height: 150px;
   }
