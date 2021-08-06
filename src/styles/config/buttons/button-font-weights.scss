@@ -1,7 +1,0 @@
-@import "../typography/index.scss";
-
-$buttons-font-weight: (
-  btn-fw-lg: map-get($font-weight, medium),
-  btn-fw-md: map-get($font-weight, normal),
-  btn-fw-sm: map-get($font-weight, light),
-);
