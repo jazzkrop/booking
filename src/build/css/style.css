@@ -1260,6 +1260,10 @@ a {
   color: var(--color-brown-default) !important;
 }
 
+.fc-warning {
+  color: var(--color-warning-default) !important;
+}
+
 .fc-success {
   color: var(--color-success-default) !important;
 }
