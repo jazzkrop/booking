@@ -1,4 +1,3 @@
-@import "../../config";
 @each $name, $value in $font-size {
   .fs-#{$name} {
     font-size: $value !important;
