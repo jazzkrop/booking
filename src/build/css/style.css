@@ -1840,7 +1840,7 @@ summary {
   position: absolute;
   top: 50%;
   vertical-align: middle;
-  right: 16px;
+  right: -16px;
   z-index: 5;
 }
 
