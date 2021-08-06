@@ -1,4 +1,3 @@
-@import "../../config";
 @each $name, $value in $font-color {
   .fc-#{$name} {
     color: $value !important;
