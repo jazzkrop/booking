@@ -1,0 +1,23 @@
+.rows-wrapper {
+  flex-wrap: nowrap !important;
+}
+
+.card-warning {
+  padding: 16px;
+}
+
+.select-appearance {
+  width: 100%;
+}
+
+.work-checkbox {
+  max-width: 13px;
+}
+
+.btn-xxl {
+  width: 100%;
+}
+
+.btn-nav {
+  list-style: none;
+}
