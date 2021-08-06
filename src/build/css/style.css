@@ -3512,3 +3512,7 @@ footer #mobile-version {
   .img-footer{
     width: auto;
   }
+
+  .bg-color-danger-lighten2{
+    background-color: var(--color-danger-lighten2);
+  }
