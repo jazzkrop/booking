@@ -1,6 +1,3 @@
-@import "../../helpers/index.scss";
-
-
 .tab{
     display: flex;
     border-bottom: map-get($border-width , bw-1 ) solid map-get($border-color , secondary);

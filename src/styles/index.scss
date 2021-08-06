@@ -1,3 +1,10 @@
+//include bootstrap
+@import url(../../node_modules/bootstrap/dist/css/bootstrap.css);
+//config
+@import "config/index.scss";
+//helpers
+@import "helpers/index.scss";
+//components
+@import "components/index.scss";
 //pages
 @import "pages/index.scss";
-@import url(../../node_modules/bootstrap/dist/css/bootstrap.css);
